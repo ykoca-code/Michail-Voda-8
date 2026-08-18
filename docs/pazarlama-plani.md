@@ -22,7 +22,7 @@ Pazarlamanın tamamı şu mevzuat gerçeğinin üzerine kurulmalı:
 |---|---|---|
 | Atina/Attika standart eşik | **800.000 EUR** | Normal bir Atina dairesiyle Golden Visa neredeyse imkânsız fiyatta |
 | **Ticariden konuta dönüşüm istisnası** | **250.000 EUR**, bölge fark etmeksizin | MV8 bir ofis binasının konuta dönüşümü → tam bu istisnaya giriyor. **Ana satış argümanımız bu.** |
-| Dönüşümün tamamlanma şartı | Golden Visa başvurusundan **önce** dönüşüm resmen tamamlanmış olmalı | Teslim/iskan takvimi ile başvuru takvimini senkron planlıyoruz; müşteriye net zaman çizelgesi veriyoruz |
+| Dönüşümün tamamlanma şartı | Golden Visa başvurusundan **önce** binanın konuta dönüşümü resmen tamamlanmış olmalı | Bu şart **binanın hukuki statüsüne** ilişkindir, dairenin alıcıya tesliminden farklıdır: MV8'de dönüşüm tamamlandığı için müşteri teslimi (Aralık 2026) beklemeden başvurabiliyor |
 | Kısa dönem kiralama (Airbnb) | Golden Visa mülklerinde **yasak** (60 günden kısa kiralama yok) | Bizim 5 yıllık uzun dönem kira garantimiz bu kısıtı müşteri için **avantaja** çeviriyor |
 | Oturum izni | **5 yıl, yenilenebilir**, asgari kalış şartı yok; kart basım tarihinden itibaren geçerli (K.5275/2026) | "Yaşama zorunluluğu yok, Schengen'de serbest dolaşım" mesajı |
 | Başvuru zamanlaması | Satın alma tamamlandığında başvuru yapılabiliyor | **Teslim (Aralık 2026) beklenmeden oturum kartı alınabilir** — reklam mesajı olarak öne çıkarılacak |
@@ -149,10 +149,11 @@ Kampanya mimarisi (3 katman):
 
 1. **Dil disiplini:** "Vatandaşlık" değil "oturum izni"; "garanti" değil "başvuru". Onay makamın takdirindedir ibaresi web sitesi ve broşürde dipnot olarak dursun.
 2. **Kira garantisi** pazarlamada kullanılmadan önce yazılı sözleşme şablonuna bağlanmalı (kim ödüyor, hangi şirket, endeksleme, erken satış durumu).
-3. **Dönüşüm zamanlaması:** başvuru öncesi dönüşümün resmen tamamlanmış olması şartını müşteri zaman çizelgesinde şeffaf gösterin; teslim gecikmesi senaryosunu sözleşmede düzenleyin.
-4. **KVKK:** form ve DM'den toplanan veriler için açık rıza + aydınlatma metni; veriler yurtdışına (Yunanistan ofisi) aktarılıyorsa açık rızada belirtin.
-5. **Vergi yönlendirmesi:** Türkiye'deki vergisel sonuçlar (varlık bildirimi vb.) için "vergi danışmanınıza danışın" notu — biz vergi tavsiyesi vermiyoruz.
-6. Reklam görsellerinde başka projelerin fotoğrafları ("inspirations" sayfaları) kullanılmaz; yalnızca MV8 render ve şantiye görselleri.
+3. **Başvuru zamanlaması iddiası:** "Teslim beklenmeden başvuru" mesajı reklamda kullanılmadan önce Ramadanoglou Politis'ten **yazılı teyit** alınmalı (hangi aşamada — satış vaadi mi, tapu devri mi — başvurunun kabul edildiği net yazılsın). Bu, hem müşteri beklentisini hem hukuki sorumluluğu doğru kurar.
+4. **Dönüşüm zamanlaması:** başvuru öncesi dönüşümün resmen tamamlanmış olması şartını müşteri zaman çizelgesinde şeffaf gösterin; teslim gecikmesi senaryosunu sözleşmede düzenleyin.
+5. **KVKK:** form ve DM'den toplanan veriler için açık rıza + aydınlatma metni; veriler yurtdışına (Yunanistan ofisi) aktarılıyorsa açık rızada belirtin.
+6. **Vergi yönlendirmesi:** Türkiye'deki vergisel sonuçlar (varlık bildirimi vb.) için "vergi danışmanınıza danışın" notu — biz vergi tavsiyesi vermiyoruz.
+7. Reklam görsellerinde başka projelerin fotoğrafları ("inspirations" sayfaları) kullanılmaz; yalnızca MV8 render ve şantiye görselleri.
 
 ## 9. 90 günlük yol haritası
 
