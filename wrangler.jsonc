@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers yapılandırması — statik site site/ klasöründen yayınlanır
+  "name": "michail-voda-8",
+  "compatibility_date": "2026-08-18",
+  "assets": {
+    "directory": "./site"
+  }
+}
