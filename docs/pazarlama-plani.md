@@ -127,6 +127,14 @@ Kampanya mimarisi (3 katman):
 2. *Aile açısı:* "Tek yatırımla eşiniz, 21 yaş altı çocuklarınız ve anne-babanız için 5 yıllık Yunanistan oturum izni başvurusu. Yaşama zorunluluğu yok. Süreci Atina'daki ekibimiz ve anlaşmalı hukuk büromuz yürütüyor."
 3. *Getiri açısı:* "Daireniz teslim günü kiracısını bekliyor: 5 yıl boyunca ayda 500 € kirayı biz ödüyoruz. Airbnb yasağı derdi yok, boşluk riski yok. Atina merkezde sıfır daire + oturum izni, tek pakette."
 
+**LinkedIn — güven kanalı (bütçesiz/düşük bütçeli).**
+Şirket sayfası: [linkedin.com/company/michailvoda8](https://www.linkedin.com/company/michailvoda8) — sitede footer'dan da bağlantılı.
+
+- **Asıl işlevi güven:** hedef kitlemiz (yönetici, işletme sahibi, doktor/avukat) bizi Google'da aradığında kurumsal bir LinkedIn sayfası görmek güven zincirinin parçası. Sayfa eksiksiz doldurulur (logo, kapak görseli, TR+EN açıklama, web sitesi linki, Atina konumu).
+- **Organik içerik:** haftada 1–2 gönderi — şantiye/dönüşüm ilerlemesi, mevzuat açıklamaları (800k vs 250k istisnası), teslim duyuruları, süreç bilgilendirmeleri. Instagram içeriğinin kurumsal tona uyarlanmış hâli; yüzsüz marka kurgusuyla uyumlu.
+- **LinkedIn Ads:** CPL, Meta'nın 5–10 katıdır; bu segmentte ana performans kanalı değildir. Öneri: ilk 3 ay yalnızca organik; sonrasında istenirse toplam bütçenin ~%10'u ile tek kampanyalık test (TR, 35–60 yaş, yönetici+ unvanlar, lead gen form). Test CPL'i Meta'nın 3 katını aşarsa kapatılır.
+- Ekip üyelerinin kişisel profillerinden şirket sayfası içeriklerinin paylaşılması, sayfanın ilk erişimini bedavaya büyütür.
+
 ## 7. Satış hunisi ve CRM
 
 **Akış:** Reklam → form/DM → **15 dk içinde WhatsApp'tan dönüş** (hız, dönüşümün en büyük kaldıracı) → 15 dk telefon ön eleme → 45 dk Zoom sunum (sunum PDF'i + canlı envanter) → Atina gezisi daveti (2 gün program: bina, avukat bürosu, mahalle turu) veya uzaktan ilerleme (vekaletname yolu zaten uzaktan kurgulu) → 5.000 € rezervasyon kaporası → satış vaadi → tapu → Golden Visa başvurusu.
