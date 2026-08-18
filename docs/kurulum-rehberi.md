@@ -58,6 +58,26 @@ Ayrı hatla kurun (+30 Yunan veya +90 Türk numarası; hedef kitle TR olduğu i�
 - Ön şartlar: doğrulanmış Business Portfolio (adım 5) + **uygulamada kullanılmayan** bir numara (bir numara ya uygulamada ya API'de olur; taşırsanız uygulamadan çıkar — bu yüzden API'ye ayrı numara ayırın).
 - **Nereden:** doğrudan Meta ([business.whatsapp.com](https://business.whatsapp.com) → Cloud API, aracısız) veya bir BSP/arayüz: 360dialog, respond.io, Twilio; ManyChat DM otomasyonu da aynı API'ye bağlanır. Ücretlendirme konuşma başına; müşteri size yazdığında açılan servis konuşmaları ücretsiz, sizin başlattığınız şablon mesajlar ücretli.
 
+## 6a. Netleştirme — telefon numarası ve işletme doğrulaması, en basit yol
+
+**Telefon: aslında 3 ayrı ihtiyaç var, tek numara sanılıyor.**
+
+| İhtiyaç | En basit çözüm |
+|---|---|
+| Instagram/Facebook 2FA | Numara **gerekmez** — authenticator uygulaması (Google Authenticator/1Password) hem daha basit hem daha güvenli |
+| WhatsApp Business uygulaması | Mevcut telefonunuza **1 ek eSIM/faturasız hat** (+90). Aktivasyonda bir kez SMS alması yeterli, sonrası internetten çalışır. Şahsi WhatsApp ile aynı telefonda yan yana durur (ayrı uygulama) |
+| WhatsApp API (hafta 5+) | Uygulamadakinden **ayrı** ikinci bir numara — şimdi gerekmiyor, sırası gelince alınır |
+
+İşletme doğrulama formundaki "işletme telefonu" için de telefon şart değil: onay adımını **alan adı e-postasıyla** (info@michailvoda8.com) geçebilirsiniz.
+
+**İşletme doğrulaması: acele etmeyin, reklam için gerekmiyor.**
+
+- Reklamlar doğrulamasız yayınlanır. Doğrulama yalnızca **WhatsApp API** (ve birkaç ileri özellik) için şart → hafta 4–5'te, API'den hemen önce yapın. Şimdilik sadece evrakları hazırlayın.
+- **Hangi şirket:** reklam hesabını açtığınız tüzel kişilikle aynısı — binanın sahibi Yunan şirketi en temiz seçenek.
+- **Evrak (2 belge):** (1) resmi kuruluş/vergi kaydı (yasal ad birebir aynı olmalı), (2) yasal ad + adresi birlikte gösteren belge (şirket banka ekstresi veya faturası). Şahsi belge/pasaport **kabul edilmez** — belgeler şirket adına olmalı.
+- **Süreç:** Business Suite → Security Center → "Start verification" → bilgileri evraktaki yazımla birebir girin → belgeleri yükleyin → onay yöntemi olarak **e-posta (kendi domaininiz)** seçin → sonuç 1–14 iş günü.
+- **Red yememenin sırrı tutarlılık:** web sitesi canlı olmalı ve şirketin yasal adı sitede (footer/iletişim sayfası) görünmeli; başvurudaki e-posta aynı domainde olmalı; adres evrakla aynı olmalı. Yani doğru sıra: önce site + kurumsal e-posta, sonra doğrulama başvurusu.
+
 ## 7. Bitiş kontrol listesi
 
 - [ ] 3 domain Cloudflare'de, michailvoda8.com ana marka
