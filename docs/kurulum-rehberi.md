@@ -86,6 +86,34 @@ Bu yüzden şu kurgu tamamen geçerli ve en hızlı başlangıçtır:
   (asıl değer biriken bunlardır), sadece reklam hesabı değişir. Yani bu başlangıç
   geri döndürülebilir, riski düşük bir yoldur.
 
+## 5b. Sitesiz çalışma opsiyonu
+
+Web sitesi olmadan da huni kurulabilir; Meta bunun için iki reklam ürünü sunar:
+
+1. **Instant Form (Potansiyel Müşteri reklamları):** form Facebook/Instagram'ın içinde
+   açılır, site gerekmez. Ön eleme soruları sorulabilir; lead'ler CRM'e veya e-tabloya düşer.
+2. **Click-to-WhatsApp reklamları:** reklama tıklayan doğrudan WhatsApp sohbetine gelir.
+   Bilgi paketi PDF'i sohbetten gönderilir.
+
+Instagram profili vitrin görevi görür; bio linki `wa.me/...` olur. Bu kurguda domain +
+kurumsal e-posta yine alınmalıdır (ucuz, ve Meta hesap güvenilirliği için önemli).
+
+**Sitesiz kaybedilenler:**
+- **Google Search reklamları fiilen devre dışı** — "yunanistan golden visa" gibi en
+  yüksek niyetli aramalar rakiplere kalır (bu kelimede arayan kişi zaten alıcıdır).
+- **Pixel + site retargeting yok** (IG etkileşimi ve form açanlar üzerinden retargeting
+  yine mümkün ama daha zayıf).
+- **Güven sinyali eksilir:** ~270.000 €'luk kararda müşterinin Google'da sizi arayıp
+  hiçbir şey bulamaması ciddi bir itiraz konusudur; dolandırıcılık algısı riski artar.
+- **Meta işletme doğrulaması zorlaşır** (Meta, işletme bilgilerini web üzerinden çapraz
+  kontrol eder) → WhatsApp API yolu da dolaylı olarak zorlaşır.
+
+**Sonuç:** Sitesiz *başlanabilir*; ama site zaten hazır kodlanmış durumda (`site/`),
+yayına alma maliyeti ~10 $/yıl domain + 15 dk Cloudflare Pages kurulumudur. Önerilen:
+reklamlara Instant Form + Click-to-WhatsApp ile başla (site bloker değil), hazır siteyi
+de aynı hafta yayına al — reklam metinlerinde link zorunlu değil, site yalnızca güven
+ve Google araması için arkada dursun.
+
 ## 6a. Netleştirme — telefon numarası ve işletme doğrulaması, en basit yol
 
 **Telefon: aslında 3 ayrı ihtiyaç var, tek numara sanılıyor.**
