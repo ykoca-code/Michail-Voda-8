@@ -248,5 +248,27 @@
 
 <a class="wa-float" href="https://wa.me/900000000000" aria-label="WhatsApp ile yazın"><!-- TODO: gerçek numara -->WhatsApp</a>
 
+<script>
+// Form gönderimi: başarılıysa kendi teşekkür sayfamıza yönlendir
+(function () {
+  var f = document.querySelector('#basvuru form');
+  if (!f) return;
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = f.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Gönderiliyor…';
+    fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (r.ok) { location.href = '/tesekkurler'; }
+        else { throw new Error(); }
+      })
+      .catch(function () {
+        btn.disabled = false; btn.textContent = 'Bilgi paketi gönderin';
+        alert('Gönderim sırasında bir sorun oluştu. Lütfen tekrar deneyin ya da WhatsApp üzerinden yazın.');
+      });
+  });
+})();
+</script>
+
 </body>
 </html>
