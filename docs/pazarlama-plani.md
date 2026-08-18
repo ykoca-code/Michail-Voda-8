@@ -25,6 +25,7 @@ Pazarlamanın tamamı şu mevzuat gerçeğinin üzerine kurulmalı:
 | Dönüşümün tamamlanma şartı | Golden Visa başvurusundan **önce** dönüşüm resmen tamamlanmış olmalı | Teslim/iskan takvimi ile başvuru takvimini senkron planlıyoruz; müşteriye net zaman çizelgesi veriyoruz |
 | Kısa dönem kiralama (Airbnb) | Golden Visa mülklerinde **yasak** (60 günden kısa kiralama yok) | Bizim 5 yıllık uzun dönem kira garantimiz bu kısıtı müşteri için **avantaja** çeviriyor |
 | Oturum izni | **5 yıl, yenilenebilir**, asgari kalış şartı yok; kart basım tarihinden itibaren geçerli (K.5275/2026) | "Yaşama zorunluluğu yok, Schengen'de serbest dolaşım" mesajı |
+| Başvuru zamanlaması | Satın alma tamamlandığında başvuru yapılabiliyor | **Teslim (Aralık 2026) beklenmeden oturum kartı alınabilir** — reklam mesajı olarak öne çıkarılacak |
 | Aile kapsamı | Eş, 21 yaş altı çocuklar, tarafların bakmakla yükümlü ebeveynleri | "Tek yatırım, tüm aile" mesajı |
 
 **Uyum notu:** Reklamlarda asla "vatandaşlık" ve "garanti vize" denmez. Doğru dil: "Yunanistan'ın ticariden konuta dönüşüm istisnası kapsamında 250.000 EUR eşiğiyle oturum izni başvurusu; onay ilgili makamların takdirindedir."
@@ -37,8 +38,9 @@ Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve süreci
 
 1. **Eşik avantajı:** Atina'da normal eşik 800 bin €; MV8 dönüşüm projesi olduğu için 250 bin €.
 2. **Tek muhatap:** daire satışı + avukat + vergi numarası + biyometri randevusu + oturum kartı; hepsi bizde. ~13.500 €'luk kapanış masrafını biz karşılıyoruz.
-3. **Öngörülebilir nakit akışı:** 5 yıl × 500 €/ay kira, banka hesabına.
-4. **Kıtlık:** 30 dairenin 18'i satıldı.
+3. **Hız:** Golden Visa başvurusu için teslim beklenmez; satın alma sonrası başvuru başlar, oturum kartı daire teslim edilmeden alınabilir.
+4. **Öngörülebilir nakit akışı:** 5 yıl × 500 €/ay kira, banka hesabına.
+5. **Kıtlık:** 30 dairenin 18'i satıldı.
 
 **Sayı hikâyesi (tüm materyallerde aynı tablo):**
 
