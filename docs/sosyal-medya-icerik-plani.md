@@ -25,7 +25,7 @@ Atina'nın merkezinde, Michail Voda Sokağı'nda eski bir ofis binası 30 dairel
 Bu dönüşüm yalnızca mimari bir yenileme değil. Yunanistan'da Golden Visa için asgari yatırım Atina'da 800.000 €'ya yükseldi; ticari binaların konuta dönüştürüldüğü projelerde ise eşik 250.000 € olarak korunuyor. Michail Voda 8 tam olarak bu kapsamda.
 
 · 29–49 m² daireler, eşyalı teslim
-· Teslim: Aralık 2026
+· Teslim: Aralık 2026 — başvuru için teslimi beklemezsiniz
 · Tapudan oturum kartına kadar süreç tek elden
 
 Fiyat listesi ve süreç dosyası için profildeki bağlantı.
@@ -45,6 +45,8 @@ Fiyat listesi ve süreç dosyası için profildeki bağlantı.
 Farkı yaratan şey binanın kendisi: Michail Voda 8, bir ofis binasının konuta dönüşümü. Yunanistan mevzuatı bu tip projelerde Golden Visa eşiğini 250.000 € olarak koruyor — şehir fark etmeksizin.
 
 Karşılığında: Atina'nın merkezinde yepyeni, eşyalı bir daire ve eş, 21 yaş altı çocuklar ile bakmakla yükümlü olunan anne-babalar için 5 yıllık, yenilenebilir oturum izni başvurusu.
+
+Üstelik başvuru için dairenin teslimini beklemezsiniz: satın alma tamamlandığında süreç başlar, oturum kartınızı teslimden önce alabilirsiniz.
 
 Süreci Atina'daki ekibimiz ve anlaşmalı hukuk büromuz yürütüyor.
 
@@ -139,7 +141,7 @@ Türkiye'den ayrılmadan başlayan bir süreç.
 3 · Başvuru — Siz, eşiniz, 21 yaş altı çocuklarınız ve bakmakla yükümlü olduğunuz anne-babanız için dosyalar hazırlanır.
 4 · Oturum kartı — Randevunuzda parmak izi verilir; 5 yıllık, yenilenebilir kartlarınız çıkar.
 
-Atina'ya yalnızca parmak izi randevusu için bir kez gelirsiniz. Yaşama zorunluluğu yoktur.
+Atina'ya yalnızca parmak izi randevusu için bir kez gelirsiniz. Yaşama zorunluluğu yoktur. Başvuru, dairenin teslimini beklemeden satın alma sonrası başlar.
 
 Başvuru sonucu resmi makamların takdirindedir.
 ```
