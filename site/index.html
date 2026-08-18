@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..560;1,9..144,340..560&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23241C17'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-style='italic' font-size='20' fill='%239E3B2B' text-anchor='middle'%3E8%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
-<!-- TODO: Meta Pixel kodu buraya -->
+<script src="pixel.js"></script>
 <!-- TODO: GA4 / Google Tag Manager kodu buraya -->
 </head>
 <body>
@@ -354,6 +354,7 @@
       e.preventDefault();
       modal.classList.add('open');
       document.body.classList.add('modal-open');
+      window.mv8Track('FormAcildi', { content_name: 'On gorusme formu' });
       var first = modal.querySelector('input[name="ad_soyad"]');
       if (first) setTimeout(function () { first.focus(); }, 50);
     });
@@ -494,7 +495,10 @@
     var oran = Math.min((gecen + (t - baslangic)) / sure, 1);
     barlar[idx].firstChild.style.width = (oran * 100) + '%';
     if (oran >= 1) {
-      if (idx + 1 < scenes.length) { sahneyiGoster(idx + 1); }
+      if (idx + 1 < scenes.length) {
+        sahneyiGoster(idx + 1);
+        if (idx === 3) window.mv8Track('FilmIzlendi', { content_name: 'Tanitim filmi yarisi' });
+      }
       else { durdur(true); return; }
     }
     raf = requestAnimationFrame(dongu);
