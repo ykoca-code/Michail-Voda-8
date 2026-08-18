@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Başvuru — Michail Voda 8</title>
+<meta name="description" content="Michail Voda 8 için ücretsiz ön görüşme talebi: fiyat listesi, kat planları ve Golden Visa süreç dosyası.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..560;1,9..144,340..560&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<!-- TODO: Meta Pixel kodu buraya -->
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/">Michail Voda <span class="no">8</span><small>Athens</small></a>
+    <ul><li><a class="nav-cta" href="/">Ana sayfa</a></li></ul>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap" style="max-width: 30rem;">
+    <span class="form-badge">Ücretsiz Ön Görüşme</span>
+    <h1 style="font-size: clamp(1.8rem, 4.5vw, 2.5rem);">Size ulaşalım</h1>
+    <p class="lead" style="margin-bottom: 1.8rem;">Formu bırakın; ekibimiz 24 saat içinde arasın, fiyat listesini ve süreç dosyasını iletsin.</p>
+    <form class="lead-form" action="https://formspree.io/f/mrpzokka" method="POST">
+      <input type="hidden" name="_subject" value="MV8 başvuru sayfası — ön görüşme talebi">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+      <div><label for="b-ad">Ad Soyad *</label><input id="b-ad" name="ad_soyad" required autocomplete="name"></div>
+      <div><label for="b-tel">Telefon *</label>
+        <div class="phone-row"><span class="phone-prefix">+90</span><input id="b-tel" name="telefon" type="tel" required autocomplete="tel" inputmode="tel" placeholder="5XX XXX XX XX"></div>
+      </div>
+      <div><label for="b-ep">E-posta *</label><input id="b-ep" name="email" type="email" required autocomplete="email" placeholder="ornek@eposta.com"></div>
+      <div class="form-row2">
+        <div><label for="b-aile">Kaç kişi için?</label>
+          <select id="b-aile" name="kisi_sayisi"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+        </div>
+        <div><label for="b-zaman">Ne zaman?</label>
+          <select id="b-zaman" name="zamanlama"><option>0–3 ay içinde</option><option>3–6 ay içinde</option><option>Araştırıyorum</option></select>
+        </div>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="b-kvkk" required>
+        <label for="b-kvkk">Kişisel verilerimin <a href="kvkk.html" target="_blank" rel="noopener">Aydınlatma Metni</a> kapsamında işlenmesine ve tarafıma ulaşılmasına izin veriyorum.</label>
+      </div>
+      <button class="btn btn-primary" type="submit">Görüşme talebi gönder</button>
+    </form>
+
+    <div class="spec" style="margin-top: 2.5rem; grid-template-columns: 1fr;">
+      <div><span>Proje</span><b>Michail Voda 8, Athens</b></div>
+      <div><span>Adres</span><b>8 Michail Voda Sk., 104 39 Atina</b></div>
+      <div><span>Proje türü</span><b>Ofisten konuta dönüşüm</b></div>
+      <div><span>Daire sayısı</span><b>30 daire · 29–49 m² · 12 daire müsait</b></div>
+      <div><span>Satış fiyatı</span><b>250.000 € · sabit</b></div>
+      <div><span>Kira garantisi</span><b>5 yıl · aylık 500 €</b></div>
+      <div><span>Teslim</span><b>Şubat 2027</b></div>
+      <div><span>Mimari</span><b>Gavalas·Ioannidou Architecture</b></div>
+      <div><span>Hukuk</span><b>Ramadanoglou Politis Legal Group</b></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="f-brand">Michail Voda 8 <em style="color:#E8AE93;">Athens</em></p>
+    <div class="f-links">
+      <a href="mailto:info@michailvoda8.com">info@michailvoda8.com</a>
+      <a href="https://www.linkedin.com/company/michailvoda8" rel="noopener">LinkedIn</a>
+      <a href="kvkk.html">KVKK Aydınlatma Metni</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('form.lead-form').forEach(function (f) {
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = f.querySelector('button[type=submit]');
+    var eski = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Gönderiliyor…';
+    fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+      .then(function (r) { if (r.ok) { location.href = '/tesekkurler'; } else { throw new Error(); } })
+      .catch(function () {
+        btn.disabled = false; btn.textContent = eski;
+        alert('Gönderim sırasında bir sorun oluştu. Lütfen tekrar deneyin ya da info@michailvoda8.com adresine yazın.');
+      });
+  });
+});
+</script>
+
+</body>
+</html>
