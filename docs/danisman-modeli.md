@@ -89,3 +89,32 @@ ifadesi hiçbir materyalde kullanılmaz.
 Ek maliyet: yalnızca bir domain (~10 $/yıl) ve içerik üretiminde kamera disiplini.
 Kurulum adımları `kurulum-rehberi.md` ile aynıdır; sadece hesap adları ve site
 yapısı bu dokümana göre değişir.
+
+## 6. Karar: yüzsüz marka (seçilen yol)
+
+Kurucunun yüzünü kullanmama kararı alındı → kişisel marka modeli rafa kalktı,
+**bina markası (MV8) kurgusuyla** devam ediliyor. Yüz olmadan güven şu araçlarla
+kurulur; içerik planı buna göre uygulanır:
+
+1. **Bina ve şantiye gerçek görüntü kanıtıdır.** Render değil telefon çekimi şantiye
+   turları, öncesi/sonrası kesitleri, teslim edilen katlar. Bu nişte sahtelik
+   şüphesini en hızlı kıran şey "bugün şantiyede çekilmiş" görüntüdür.
+2. **Sesli anlatım (voice-over) + altyazı Reels.** Kamera karşısına geçmeden anlatım:
+   ekran kaydı üstüne konuşma (kat planı, masraf tablosu, süreç şeması) veya şantiye
+   görüntüsü üstüne ses. Ses de istenmiyorsa profesyonel seslendirme satın alınır
+   (yapay/robotik TTS kullanmayın — güveni düşürür).
+3. **Kurumsal kimlikler yüzün yerini alır:** Ramadanoglou Politis hukuk bürosu (isim,
+   ofis, süreç dokümanı), Gavalas·Ioannidou mimarlık, Kolonaki'deki ofis adresi,
+   tapu/kadastro belgeleri (kişisel veriler maskelenmiş).
+4. **Müşterinin yüzü sizin yüzünüzden değerlidir:** izin veren alıcılarla biyometri
+   günü / tapu günü / anahtar teslim kareleri ve kısa video yorumlar. İzin vermeyenler
+   için maskelenmiş isimle ("K.A., İstanbul") yazılı hikâye.
+5. **Satış görüşmeleri zaten kamuya açık değil:** Zoom sunumlarını sizin adınıza bir
+   satış temsilcisi de yapabilir; sosyal medyada yüz gerekmiyor diye birebir güven
+   kurulamayacak değil — huninin güven adımı Zoom + Atina ziyaretidir.
+6. **"Biz" dili:** metinlerde tekil kişi yerine "MV8 ekibi / Atina ekibimiz" kullanılır;
+   sitede ekip sayfası yerine "Süreçte kimler var?" bölümü (hukuk bürosu, mimarlık
+   ofisi, satış ekibi) yer alır.
+
+Not: yüzsüz kurguda reklam kreatifi yükü görsel/kurgu tarafına kayar — şantiyeden
+düzenli (ayda 1–2) görüntü akışı temin etmek içerik planının hammaddesidir.
