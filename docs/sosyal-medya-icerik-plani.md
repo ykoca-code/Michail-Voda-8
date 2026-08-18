@@ -25,7 +25,7 @@ Atina'nın merkezinde, Michail Voda Sokağı'nda eski bir ofis binası 30 dairel
 Bu dönüşüm yalnızca mimari bir yenileme değil. Yunanistan'da Golden Visa için asgari yatırım Atina'da 800.000 €'ya yükseldi; ticari binaların konuta dönüştürüldüğü projelerde ise eşik 250.000 € olarak korunuyor. Michail Voda 8 tam olarak bu kapsamda.
 
 · 29–49 m² daireler, eşyalı teslim
-· Teslim: Şubat 2027
+· Teslim: Aralık 2026
 · Tapudan oturum kartına kadar süreç tek elden
 
 Fiyat listesi ve süreç dosyası için profildeki bağlantı.
@@ -157,7 +157,7 @@ Detaylar da projenin bir parçası.
 
 Banyolarda terracotta fayans, gömme rezervuar, cam bölme ve pirinç detaylar. Binanın cephesindeki kiremit kırmızısı, iç mekânlarda malzeme olarak devam ediyor.
 
-Daireler bu donanımla, eşyalı teslim ediliyor. Teslim: Şubat 2027.
+Daireler bu donanımla, eşyalı teslim ediliyor. Teslim: Aralık 2026.
 ```
 
 *İpucu: Estetik odaklı bu tür kareler kaydedilir ve paylaşılır; hafta ortası için ideal.*
@@ -173,7 +173,7 @@ Michail Voda 8, Athens
 
 · Ofisten konuta dönüşüm · 30 daire · 29–49 m²
 · Satış fiyatı: 250.000 € (sabit)
-· Eşyalı teslim · Şubat 2027
+· Eşyalı teslim · Aralık 2026
 · 5 yıl kira garantisi: ayda 500 €
 · Mimari: Gavalas·Ioannidou Architecture
 · Hukuk: Ramadanoglou Politis Legal Group, Kolonaki/Atina
@@ -260,7 +260,7 @@ Binanın ortasında sessiz bir avlu.
 
 Şehrin göbeğinde, sokağın gürültüsünden korunmuş, yeşillendirilmiş bir ortak alan. Zemin katta kahve içilebilecek oturma alanları, üst katlarda avluya bakan pencereler.
 
-Michail Voda 8 · Teslim: Şubat 2027
+Michail Voda 8 · Teslim: Aralık 2026
 ```
 
 *İpucu: Story'de 'Sizce bina hangi sokakta?' gibi bir soruyla etkileşim alın.*
