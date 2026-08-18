@@ -58,6 +58,34 @@ Ayrı hatla kurun (+30 Yunan veya +90 Türk numarası; hedef kitle TR olduğu i�
 - Ön şartlar: doğrulanmış Business Portfolio (adım 5) + **uygulamada kullanılmayan** bir numara (bir numara ya uygulamada ya API'de olur; taşırsanız uygulamadan çıkar — bu yüzden API'ye ayrı numara ayırın).
 - **Nereden:** doğrudan Meta ([business.whatsapp.com](https://business.whatsapp.com) → Cloud API, aracısız) veya bir BSP/arayüz: 360dialog, respond.io, Twilio; ManyChat DM otomasyonu da aynı API'ye bağlanır. Ücretlendirme konuşma başına; müşteri size yazdığında açılan servis konuşmaları ücretsiz, sizin başlattığınız şablon mesajlar ücretli.
 
+## 5a. Seçilen basit başlangıç: reklam hesabı kişi adına, reklamlar MV8 sayfasından
+
+Reklamın halka görünen yüzü **sayfadır**; reklam hesabının sahibi dışarıdan görünmez.
+Bu yüzden şu kurgu tamamen geçerli ve en hızlı başlangıçtır:
+
+1. Business Portfolio'yu şahsi Facebook hesabıyla açın (işletme adı alanına
+   "Michail Voda 8" yazılabilir; **işletme doğrulaması zorunlu değil**, evrak istenmez).
+2. İçine MV8 sayfası + Instagram + yeni reklam hesabı; ödeme şahsi kredi kartı.
+   Para birimi kuralı yine geçerli: **sonradan değişmez** (şahsi TR kartıyla Türkiye +
+   TRY + %20 KDV en pratiği; %20'lik KDV maliyetini bütçeye ekleyin).
+3. Reklamlar MV8 sayfası + @michailvoda8 kimliğiyle yayınlanır. İzleyici için hiçbir
+   fark yok.
+
+**Bilinmesi gereken 4 sınır:**
+- **Fatura şahsa kesilir** → şirket gideri olarak gösterilemez. Vergisel olarak
+  önemliyse muhasebeciye danışın; değilse sorun değil.
+- **Yeni + doğrulamasız hesapların günlük harcama limiti başta düşüktür** ve otomatik
+  sistemler yeni hesaplara karşı hassastır. İlk hafta düşük bütçeyle (50–100 €/gün)
+  ısındırın, bilgileri (sayfa, site, domain doğrulaması) tutarlı tutun — domain
+  doğrulaması ve Pixel kurulumu doğrulamasız da yapılabilir ve yapılmalı.
+- **WhatsApp Business uygulaması** için de doğrulama gerekmez; yalnızca **WhatsApp API**
+  (hafta 5+) işletme doğrulaması ister. O gün geldiğinde aynı portfolio'ya şirket
+  evrakı yüklenir — sıfırdan kurulum gerekmez.
+- İleride şirket faturası istenirse: aynı portfolio içinde şirkete bağlı **yeni bir
+  reklam hesabı** açılır; sayfa, Instagram, takipçi ve Pixel verisi aynen kalır
+  (asıl değer biriken bunlardır), sadece reklam hesabı değişir. Yani bu başlangıç
+  geri döndürülebilir, riski düşük bir yoldur.
+
 ## 6a. Netleştirme — telefon numarası ve işletme doğrulaması, en basit yol
 
 **Telefon: aslında 3 ayrı ihtiyaç var, tek numara sanılıyor.**
