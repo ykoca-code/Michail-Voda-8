@@ -392,3 +392,20 @@ footer .fine { margin-top: 1.2rem; font-size: .76rem; line-height: 1.7; opacity:
 .esik tr.bizim td { background: var(--bg-deep); }
 .esik tr.bizim td.tutar { color: var(--accent); }
 .esik .rozet { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; background: var(--accent); color: #FCF8F3; padding: .2rem .5rem; margin-left: .5rem; white-space: nowrap; }
+
+/* ── WhatsApp ── */
+.wa-float {
+  position: fixed; right: 1.2rem; bottom: 1.2rem; z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  background: #1F8F4E; color: #FFFFFF; text-decoration: none;
+  font-size: .88rem; font-weight: 600; padding: .8rem 1.2rem; border-radius: 99px;
+  box-shadow: 0 14px 30px -10px rgba(0,0,0,.4);
+}
+.wa-float:hover { background: #18763F; color: #FFFFFF; }
+.wa-float svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+@media (max-width: 480px) { .wa-float { right: 1rem; bottom: 1rem; padding: .75rem 1.05rem; font-size: .84rem; } }
+.form-alt { text-align: center; font-size: .88rem; color: var(--ink-2); margin: .2rem 0 0; }
+.form-alt a { color: #1F8F4E; font-weight: 600; text-decoration: none; }
+.form-alt a:hover { text-decoration: underline; }
+.contact .form-alt { color: var(--dark-ink-2); }
+.contact .form-alt a { color: #6FD08C; }

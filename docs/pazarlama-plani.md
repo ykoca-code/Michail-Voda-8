@@ -9,9 +9,9 @@
 ## 1. Durum özeti
 
 - Binada **30 daire** var (29–49 m², zemin+asma kat dubleksleri dahil). 29 Haziran 2026 satış tablosuna göre **18 daire satıldı, 12 daire boşta** (ağırlıklı 1. ve 2. kat, 3 adet de 3. katta). Zemin, 4. ve 5. katlar tamamen tükendi — bu, "tükeniyor" mesajını gerçeğe dayandırıyor.
-- Fiyat: **250.000 EUR** + yaklaşık **8.000 EUR devir vergisi** (alıcı öder).
-- Bizim karşıladığımız kapanış masrafları (~**13.500 EUR**, 4 kişilik aile için): avukatlık (satış sözleşmesi + Golden Visa başvurusu) 5.000 €, sözleşme masrafları 3.000 €, kadastro 1.500 €, yatırımcı harcı + hayat sigortası 2.000 €+.
-- Vize başvuru hizmet paketi: **8.000–12.000 EUR** (aile büyüklüğüne göre), süreci Ramadanoglou Politis Legal Group ile uçtan uca biz yürütüyoruz.
+- Fiyat: **250.000 EUR** + **7.725 EUR satın alım vergisi** (alıcı öder) → alıcının ayıracağı toplam bütçe **257.725 EUR**.
+- Bizim karşıladığımız kapanış masrafları: **12.000–15.000 EUR** (yaklaşık 13.500 EUR) — avukatlık (satış sözleşmesi + Golden Visa başvurusu), sözleşme masrafları, kadastro, yatırımcı harcı ve hayat sigortası. Alıcı bu kalemler için ayrıca ödeme yapmaz.
+- Golden Visa başvuru sürecini Ramadanoglou Politis Legal Group ile uçtan uca biz yürütüyoruz; alıcıdan ayrı bir hizmet bedeli alınmıyor.
 - **Kira garantisi:** teslimden itibaren 5 yıl boyunca daireyi biz kiralıyoruz, ayda **500 EUR** (5 yılda 30.000 EUR geri dönüş, ~%2,4 brüt getiri).
 
 ## 2. Golden Visa mevzuatı ve bizim konumumuz (Ağustos 2026)
@@ -37,7 +37,7 @@ Pazarlamanın tamamı şu mevzuat gerçeğinin üzerine kurulmalı:
 Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve sürecin yürütücüsüyüz**. Mesaj hiyerarşisi:
 
 1. **Eşik avantajı:** Atina'da normal eşik 800 bin €; MV8 dönüşüm projesi olduğu için 250 bin €.
-2. **Tek muhatap:** daire satışı + avukat + vergi numarası + biyometri randevusu + oturum kartı; hepsi bizde. ~13.500 €'luk kapanış masrafını biz karşılıyoruz.
+2. **Tek muhatap:** daire satışı + avukat + vergi numarası + biyometri randevusu + oturum kartı; hepsi bizde. 12.000–15.000 €'luk kapanış masraflarını biz karşılıyoruz; alıcı yalnızca 250.000 € + 7.725 € vergi öder.
 3. **Hız:** Golden Visa başvurusu için teslim beklenmez; satın alma sonrası başvuru başlar, oturum kartı daire teslim edilmeden alınabilir.
 4. **Öngörülebilir nakit akışı:** 5 yıl × 500 €/ay kira, banka hesabına.
 5. **Kıtlık:** 30 dairenin 18'i satıldı.
@@ -47,10 +47,9 @@ Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve süreci
 | Kalem | Tutar |
 |---|---|
 | Daire satış bedeli | 250.000 € |
-| Devir vergisi (alıcı) | ~8.000 € |
-| Golden Visa hizmet paketi (aileye göre) | 8.000–12.000 € |
-| **Toplam yatırımcı bütçesi** | **~266.000–270.000 €** |
-| Bizim karşıladığımız kapanış masrafları | −13.500 € (müşteri ödemez) |
+| Satın alım vergisi (alıcı) | 7.725 € |
+| **Toplam yatırımcı bütçesi** | **257.725 €** |
+| Bizim karşıladığımız masraflar (avukatlık, noter, kadastro, sigorta) | +12.000–15.000 € (müşteri ödemez) |
 | 5 yıllık kira garantisi geri dönüşü | +30.000 € |
 
 **Hedef kitle (persona):**
@@ -103,7 +102,7 @@ Link: Linktree yerine kendi sitemizde `/basvuru` sayfası (UTM'li). WhatsApp Bus
 
 Kampanya mimarisi (3 katman):
 1. **TOFU – Tanıtım (bütçenin %30'u):** Reels/video izlenme optimizasyonu. Kreatif: 30–45 sn dönüşüm hikâyesi + "Atina'da eşik 800 bin €, bu binada 250 bin €. Nasıl?" kancası.
-2. **MOFU – Lead (bütçenin %50'si):** Instant Form (ön yeterlilik soruları: bütçe ~270 bin € uygun mu, zamanlama) veya `/basvuru` sayfasına trafik + CAPI dönüşüm. Instant Form CPL'i düşürür, site formu kaliteyi artırır — ikisini A/B test et.
+2. **MOFU – Lead (bütçenin %50'si):** Instant Form (ön yeterlilik soruları: bütçe ~258 bin € uygun mu, zamanlama) veya `/basvuru` sayfasına trafik + CAPI dönüşüm. Instant Form CPL'i düşürür, site formu kaliteyi artırır — ikisini A/B test et.
 3. **BOFU – Retargeting (bütçenin %20'si):** video izleyenler, profil ziyaretçileri, site ziyaretçileri, form açıp bırakanlar. Kreatif: "12 daire kaldı", müşteri teslim hikâyesi, Zoom bilgilendirme daveti.
 
 **Hedefleme:** TR geo (İstanbul, Ankara, İzmir, Bursa, Antalya öncelik) + Almanya/Hollanda/İngiltere/BAE'de Türkçe konuşanlar; 35–60 yaş; ilgi alanları: gayrimenkul yatırımı, yurt dışında emlak, lüks segment, iş insanları davranış grupları. 50+ lead sonrası %1 lookalike. Not: Meta'nın "housing" özel reklam kategorisi kısıtları ABD/Kanada hedeflemesi içindir; Türkiye hedeflemesinde standart kurallar geçerli — yine de metinlerde ayrımcı hedefleme çağrışımından kaçın.
@@ -138,6 +137,9 @@ Kampanya mimarisi (3 katman):
 - Ekip üyelerinin kişisel profillerinden şirket sayfası içeriklerinin paylaşılması, sayfanın ilk erişimini bedavaya büyütür.
 
 ## 7. Satış hunisi ve CRM
+
+**WhatsApp hattı:** +90 536 569 68 96 (wa.me/905365696896) — sitede sabit buton, form altı bağlantı, footer ve teşekkür sayfasında bağlı; tıklamalar Pixel'de `WhatsAppTiklama` olayı olarak izleniyor.
+
 
 **Akış:** Reklam → form/DM → **15 dk içinde WhatsApp'tan dönüş** (hız, dönüşümün en büyük kaldıracı) → 15 dk telefon ön eleme → 45 dk Zoom sunum (sunum PDF'i + canlı envanter) → Atina gezisi daveti (2 gün program: bina, avukat bürosu, mahalle turu) veya uzaktan ilerleme (vekaletname yolu zaten uzaktan kurgulu) → 5.000 € rezervasyon kaporası → satış vaadi → tapu → Golden Visa başvurusu.
 
