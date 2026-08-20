@@ -138,20 +138,34 @@ Bildirim kayıtları şunu gösteriyor — hepsi 24 saat içinde:
 Yepyeni portfolyo + hızla eklenen çoklu kimlik + dış reklam hesabı erişimi, Meta'nın
 otomatik denetiminin işaretlediği tipik desendir. Kısıtlama kalktı, **desen kalkmadı.**
 
-**Açık soru — önce bu cevaplanmalı:** `1395406840787300` hangi hesap? Daha önce
-kısıtlandığı bilinen reklam hesabı buysa, kısıtlı bir hesabı temiz portfolyoya
-bağlamış oluyoruz; riski taşımak değil, bulaştırmak bu. Hotmail hesabıyla girip
-Hesap Kalitesi ekranından doğrulanmalı; kısıtlı çıkarsa portfolyodan erişimi kaldırılmalı.
+**Güncelleme — bağlantı kesilmiş.** İkinci tur inceleme, Bow Collect / Yunus Koca'nın
+artık portfolyoda **olmadığını** doğruladı: Users → People'da tek kişi var (Michail Voda 8,
+Full access), Users → Partners boş, MV8-AdAcc'te 1 kişi / 0 partner, Requests'in dört sekmesi
+de boş. Bağlantı kurulmuş ve kaldırılmış. `1395406840787300` reklam hesabı da hiçbir listede
+görünmüyor; erişim büyük olasılıkla bağlantı kesilince düşmüş.
+
+Yani bulaşma riski kapanmış görünüyor. Yine de kesinlik için hotmail hesabıyla girilip
+Hesap Kalitesi ekranından o hesabın durumu bir kez görülebilir — ama artık acil değil,
+**öncelik listesinin başında yer almıyor**. Önemli olan dersin kendisi: yeni portfolyoya
+hızla ikinci kimlik ve dış hesap eklemek kısıtlamayı tetikledi, tekrarlanmamalı.
 
 ## Öncelik sırası
 
 **Bu hafta yapılacaklar**
 
-1. `1395406840787300` kimliğini netleştir; kısıtlıysa portfolyo bağlantısını kaldır
-2. `info@michailvoda8.com` e-posta doğrulamasını tamamla (Business info → Email)
-3. Business info'yu doldur: yasal unvan, adres, telefon, `michailvoda8.com`
-4. Reklam hesabına ödeme yöntemi ekle — **kart üzerindeki isim ve adres, portfolyodaki
+1. **`MV8-Claude` system user'ını silin** (Business Settings → Users → System users).
+   Admin yetkisiyle açılmış, atanmış varlığı yok ve hiçbir işe yaramıyor: Claude'un
+   Meta panellerinde oturumu yok, bir system user'ı kullanamaz. Buna karşılık Admin
+   yetkili bir system user, üretildiği anda portfolyonun tamamına erişen kalıcı bir
+   token demek — Meta'nın Güvenlik Merkezi'nin zaten "peer approval yok" diye uyardığı
+   bir hesapta gereksiz bir açık. Token üretildiyse önce **Revoke tokens**, sonra silin.
+   *(`Conversions API System User` kalsın — onu Meta kendisi açtı, pixel'in sunucu
+   tarafı eşlemesi için gerekli.)*
+2. `info@michailvoda8.com` e-posta doğrulamasını tamamlayın (Business info → Email)
+3. Business info'yu doldurun: yasal unvan, adres, telefon, `michailvoda8.com`
+4. Reklam hesabına ödeme yöntemi ekleyin — **kart üzerindeki isim ve adres, portfolyodaki
    işletme bilgisiyle birebir aynı olmalı**; uyuşmazlık yeniden kısıtlanma sebebidir
+5. Instagram kullanıcı adını netleştirin (aşağıya bakın)
 
 **Bu hafta YAPILMAYACAKLAR**
 
@@ -187,3 +201,15 @@ Sayfa meselesi çözülüp siteye trafik çeken kampanyalara geçilene kadar bu 
 Google Ads tarafı hazır: hesap temiz, dönüşüm ölçümü URL kuralıyla kurulu, etiket sitede canlı.
 Meta'da bu hafta tek iş güven sinyallerini tamamlamak ve sakin durmak. Sayfa meselesine
 bir hafta sonra dönülecek.
+
+## Açık kalan: Instagram kullanıcı adı
+
+Business Manager'da hesap **@michailvoda8** görünüyor (ID 17841432238241265 — doğru hesap),
+sitedeki ve dokümanlardaki bağlantılar ise `instagram.com/michailvoda8goldenvisa` adresini
+işaret ediyor. Kullanıcı adı sonradan değiştirildiyse sitedeki bağlantı kırıktır.
+
+Sunucudan doğrulanamıyor: Instagram, oturum açmamış isteklerin ikisine de 302 yönlendirmesi
+veriyor, bu yüzden hangisinin geçerli olduğu dışarıdan anlaşılmıyor.
+
+**Yapılacak:** Instagram uygulamasında profil → kullanıcı adını okuyun. `@michailvoda8` ise
+sitedeki dört sayfanın altbilgisindeki bağlantı güncellenecek (tek satırlık değişiklik).
