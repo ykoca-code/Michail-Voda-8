@@ -4,7 +4,7 @@
    "Pixel Kimliği" (15–16 haneli sayı) aşağıya yazın. Boş bırakıldığı
    sürece hiçbir izleme kodu çalışmaz (site normal şekilde açılır).   */
 
-var MV8_PIXEL_ID = ''; // örn: '1234567890123456'
+var MV8_PIXEL_ID = '1564731061789182';
 
 (function () {
   if (!MV8_PIXEL_ID) { window.mv8Track = function () {}; return; }
