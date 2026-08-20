@@ -19,32 +19,45 @@ zaten **arayan** kişiyi yakalarsınız. "Yunanistan golden visa" yazan biri niy
 4. Ödeme yöntemi: kredi kartı. Türkiye'de reklam harcamalarına **%20 dijital hizmet
    vergisi + KDV** yansır; 1.000 € bütçe kartınıza ~1.200 € olarak yansır, planlarken bunu ekleyin.
 
-## 2. Dönüşüm ölçümü (kritik — kampanyadan önce)
+## 2. Dönüşüm ölçümü — KURULDU
 
-Site tarafı hazır: `site/google.js` dosyası eklendi, dört sayfada da yüklü ve
-teşekkür sayfasında `mv8Google('Lead')` çağrılıyor. Dosya, ID'ler boş olduğu sürece
-hiçbir şey yüklemez — yani şu an sitede sıfır etkisi var.
+**Durum: tamamlandı.** Aşağıdaki yapı canlıda çalışıyor.
 
-Yapılacaklar:
+| Bileşen | Değer |
+|---|---|
+| Google etiketi | `AW-18401005291` — `site/google.js` içinden dört sayfada da yükleniyor |
+| Dönüşüm eylemi | `MV8 Ön Görüşme Talebi` |
+| Yöntem | **URL kuralı** (kod yok) — "tesekkurler" içeren sayfa yüklenmesi |
+| Hedef | Potansiyel müşteri formu gönderme |
+| Değer | 250 € · sayım: bir kez · pencere: 30 gün |
 
-1. Google Ads → **Tools → Conversions → New conversion action → Website**.
-2. Domain: `michailvoda8.com` → **Add a conversion action manually**.
-   - Goal: **Submit lead form**
-   - Conversion name: `MV8 Ön Görüşme Talebi`
-   - Value: **Use the same value** → `250` EUR (lead'in tahmini değeri değil,
-     optimizasyona sinyal olsun diye sembolik; tutarı sonra kalibre ederiz)
-   - Count: **One** (aynı kişi iki kez form doldurursa tek sayılsın)
-   - Click-through conversion window: 30 gün
-3. **Use Google tag → Install the tag yourself** deyip size verilen iki değeri alın:
-   - `AW-XXXXXXXXXX` (etiket ID'si)
-   - `AW-XXXXXXXXXX/AbCdEfGh` (dönüşüm etiketi, "Event snippet" içinde `send_to` değeri)
-4. Bu iki değeri bana iletin — `site/google.js` içindeki `ETIKET_ID` ve
-   `LEAD_ETIKET` satırlarına yazıp yayına alırım. Tek satırlık değişiklik.
-5. İsterseniz aynı anda **GA4** açın (analytics.google.com → yeni mülk →
-   `G-XXXXXXXXXX`); `GA4_ID` satırına o da girer, trafik davranışını görürüz.
-6. Yayına aldıktan sonra Google Ads → Conversions ekranında durum
-   "Recording conversions" olana kadar 24 saat bekleyin; test için siteden bir
-   form doldurup teşekkür sayfasına düşün.
+### Neden kod (event snippet) yok
+
+Kurulumda "Kod olmadan otomatik olarak" yöntemi seçildi. Sitede zaten canlı olan
+AW etiketi her sayfa görüntülemeyi Google'a bildiriyor; Google `/tesekkurler`
+yüklendiğinde dönüşümü kendi tarafında eşliyor. Teşekkür sayfasına form
+doldurmadan ulaşmak mümkün değil ve sayfa `noindex`, dolayısıyla kural birebir
+"form gönderildi" demek.
+
+> ⚠️ `site/google.js` içindeki `LEAD_ETIKET` alanı **bilerek boş bırakıldı**.
+> Oraya bir dönüşüm etiketi yazmak, URL kuralının üstüne ikinci bir sinyal
+> ekleyeceği için aynı formu iki kez saydırır. Google Ads arayüzündeki
+> `7727865543` numarası "dönüşüm türü kimliği"dir — conversion label değildir ve
+> `AW-18401005291/7727865543` şeklinde birleştirilemez.
+
+### Doğrulama
+
+Siteden bir form doldurup `/tesekkurler` sayfasına düşün. Dönüşüm eyleminin
+durumu 3–24 saat içinde "Dönüşümler bekleniyor"dan "Etkin"e döner. Kampanya
+duraklatılmışken reklam tıklamasından gelen dönüşüm oluşmaz, ama etiketin
+sayfayı görmesi durum göstergesini yine de besler.
+
+### İsteğe bağlı: GA4
+
+`analytics.google.com` → yeni mülk → `G-XXXXXXXXXX` kodunu `site/google.js`
+içindeki `GA4_ID` alanına yazmak yeterli. Trafik davranışını (hangi bölümde
+ne kadar kalınıyor, nerede terk ediliyor) görmek için faydalı; dönüşüm ölçümü
+için gerekli değil.
 
 > Not: Google'ın **Enhanced conversions** özelliği için formdaki e-posta/telefonun
 > hash'lenip gönderilmesi gerekir. KVKK metnimiz bunu açıkça kapsamıyor; avukat
@@ -193,10 +206,12 @@ geri açılırsa süre yarıya iner.
 
 ## 7. İlk 14 gün — kontrol listesi
 
-- [ ] Gün 1: Hesap + Expert Mode + faturalandırma
-- [ ] Gün 1: Dönüşüm eylemi oluştur, iki ID'yi bana ilet
-- [ ] Gün 2: `google.js` yayına alınır (bende), dönüşüm testi
-- [ ] Gün 2: K1 kur, negatif listesini yapıştır, RSA'yı yaz, uzantıları ekle
+- [x] Gün 1: Hesap açıldı (EUR · Europe/Istanbul) + faturalandırma
+- [x] Gün 1: Google etiketi `AW-18401005291` sitede yayında
+- [x] Gün 1: Dönüşüm eylemi URL kuralıyla kuruldu (kod gerekmedi)
+- [ ] Gün 2: Kampanyayı duraklat, Görüntülü Reklam Ağı'nı kapat, konum
+      ayarını "Presence" yap, negatif listesini yapıştır
+- [ ] Gün 2: RSA başlık/açıklamalarını ve uzantıları tamamla
 - [ ] Gün 3: K2 marka kampanyası (10 dakikalık iş)
 - [ ] Gün 4–7: **Search terms report**'u her gün açın. Alakasız her sorguyu
       negatife ekleyin — ilk hafta bütçenin %30'u buradan kurtarılır.

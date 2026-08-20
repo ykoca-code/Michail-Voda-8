@@ -1,10 +1,18 @@
 /* Google Ads / GA4 ölçümü.
-   Kurulum: Google Ads → Araçlar → Dönüşümler ekranından aldığınız değerleri
-   aşağıdaki üç satıra yazın. Boş bırakıldığı sürece bu dosya hiçbir şey yapmaz. */
+
+   LEAD_ETIKET BİLEREK BOŞ — DOLDURMAYIN.
+   Lead dönüşümü Google Ads tarafında URL kuralıyla tanımlı:
+   "tesekkurler" içeren sayfa yüklendiğinde Google, sitedeki AW etiketinin
+   sayfa görüntüleme sinyalinden dönüşümü kendisi eşliyor. Buraya bir
+   dönüşüm etiketi yazmak aynı formu İKİ KEZ saydırır.
+   (Google Ads'teki 7727865543 numarası "dönüşüm türü kimliği"dir,
+   conversion label değildir; AW-.../7727865543 şeklinde birleştirilemez.)
+
+   GA4_ID isteğe bağlı; doldurulursa GA4 ölçümü de devreye girer. */
 (function () {
   var ETIKET_ID   = 'AW-18401005291';            // Google Ads etiketi
   var GA4_ID      = '';            // Örn. 'G-XXXXXXXXXX'   (isteğe bağlı)
-  var LEAD_ETIKET = '';            // Örn. 'AW-1234567890/AbC-D_efG'  (dönüşüm etiketi)
+  var LEAD_ETIKET = '';            // Boş kalacak — yukarıdaki nota bakın
 
   var idler = [ETIKET_ID, GA4_ID].filter(Boolean);
   if (!idler.length) { window.mv8Google = function () {}; return; }
