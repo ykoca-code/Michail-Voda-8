@@ -193,3 +193,9 @@ Kampanya mimarisi (3 katman):
 - [Immigrant Invest — Greece Golden Visa for Non-EU Citizens 2026](https://immigrantinvest.com/blog/greece-golden-visa-for-non-eu-citizens/)
 
 > Not: Eşikler ve kurallar değişebiliyor; kampanya metinleri yayına alınmadan önce güncel mevzuat Atina'daki hukuk büromuza (Ramadanoglou Politis Legal Group) teyit ettirilmeli.
+
+---
+
+## Google Ads
+
+Google Ads kurulumu, kampanya mimarisi, anahtar kelimeler, negatif liste, reklam metinleri ve bütçesi ayrı dosyada: [`google-ads-plani.md`](google-ads-plani.md). Meta reklam hesabı kısıtlaması sürerken ana kanal budur.
