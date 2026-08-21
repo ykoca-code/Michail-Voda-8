@@ -42,7 +42,7 @@ fbq('track', 'PageView');
     <span class="form-badge">Ücretsiz Ön Görüşme</span>
     <h1 style="font-size: clamp(1.8rem, 4.5vw, 2.5rem);">Size ulaşalım</h1>
     <p class="lead" style="margin-bottom: 1.8rem;">Formu bırakın; ekibimiz 24 saat içinde arasın, fiyat listesini ve süreç dosyasını iletsin.</p>
-    <form class="lead-form" action="https://formspree.io/f/mrpzokka" method="POST">
+    <form class="lead-form" action="#" method="POST">
       <input type="hidden" name="_subject" value="MV8 başvuru sayfası — ön görüşme talebi">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
       <div><label for="b-ad">Ad Soyad *</label><input id="b-ad" name="ad_soyad" required autocomplete="name"></div>
@@ -100,10 +100,12 @@ window.mv8Track('FormAcildi', { content_name: 'Basvuru sayfasi' });
 document.querySelectorAll('form.lead-form').forEach(function (f) {
   f.addEventListener('submit', function (e) {
     e.preventDefault();
+    /* Bot gönderimlerine karşı: zorunlu alanlar boşsa hiç gönderme */
+    if (!f.elements.ad_soyad.value.trim() || !f.elements.telefon.value.trim() || !f.elements.email.value.trim()) return;
     var btn = f.querySelector('button[type=submit]');
     var eski = btn.textContent;
     btn.disabled = true; btn.textContent = 'Gönderiliyor…';
-    fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+    fetch('https://formspree.io/f/mrpzokka', { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
       .then(function (r) { if (r.ok) { location.href = '/tesekkurler'; } else { throw new Error(); } })
       .catch(function () {
         btn.disabled = false; btn.textContent = eski;
