@@ -34,9 +34,9 @@ kampanya kurulabiliyor, bütçe değiştirilebiliyor, rapor alınabiliyor.
 |---|---|---|
 | Kampanya | 120253029646810721 | `MV8 \| Lead \| Eşik \| TR` · OUTCOME_LEADS · özel kategori beyan edilmedi |
 | Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · **günlük TL 800** |
-| Reklam · GV-Esik | 120253030028520721 | kreatif 1051589844393051 |
-| Reklam · GV-Aile | 120253030023120721 | kreatif 1613986570246649 |
-| Reklam · GV-Sure | 120253030024340721 | kreatif 1453002393328763 |
+| Reklam · GV-Esik-v2 | 120253030488610721 | kreatif 1610829687225588 |
+| Reklam · GV-Aile-v2 | 120253030489770721 | kreatif 4480918678828804 |
+| Reklam · GV-Sure-v2 | 120253030491290721 | kreatif 1837708747594035 |
 
 **Yalnızca Instagram.** `publisher_platforms: ["instagram"]`,
 yerleşimler: `stream`, `story`, `reels`, `explore_home`, `profile_feed`.
@@ -65,7 +65,9 @@ ikinci planda, kanıt olarak anlatılıyor. Yasak kelimeler ("vatandaşlık",
 "pasaport", "garanti", "kesin onay") hiçbir metinde geçmiyor; her metin
 "Başvuru sonucu resmi makamların takdirindedir." ile bitiyor.
 
-Daire odaklı ilk üç reklam (Esik-1, Kira-1, Proje-1) yayınlanmadan silindi.
+Daire odaklı ilk üç reklam (Esik-1, Kira-1, Proje-1) ve bölünmüş-panel görsele sahip ilk GV seti yayınlanmadan silindi.
+
+Görsel dili v2 ile değişti: tam kanvas fotoğraf, alttan koyu degrade, üstte marka + "TESLİM · ARALIK 2026" rozeti, fotoğraf üzerinde büyük serif başlık + italik vurgu satırı (Instagram'daki organik gönderiyle aynı dil). Başlıklar konuyu bilmeyen birine kendini anlatacak şekilde kuruldu: her başlıkta Atina/Yunanistan + 250.000 € + oturum izni birlikte geçiyor; izin daima "başvuru" olarak ifade ediliyor, alıcıya verilen bir şey olarak değil.
 
 ## API notları (tekrar takılmamak için)
 
