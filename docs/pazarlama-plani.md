@@ -59,7 +59,7 @@ Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve süreci
 
 ## 4. Instagram
 
-**Kullanıcı adı:** `@michailvoda8goldenvisa` — hesap açıldı: instagram.com/michailvoda8goldenvisa. Profil adı: **Michail Voda 8, Athens** (aramada "golden visa" yakalansın diye ad alanı: "Michail Voda 8 | Atina Golden Visa").
+**Kullanıcı adı:** `@michailvoda8` — hesap açıldı: instagram.com/michailvoda8 (kayıt sırasında `@michailvoda8goldenvisa` planlanmıştı; gerçekleşen handle bu değil, site linkleri buna göre düzeltildi). Profil adı: **Michail Voda 8, Athens** (aramada "golden visa" yakalansın diye ad alanı: "Michail Voda 8 | Atina Golden Visa").
 
 **Bio (TR ağırlıklı, EN destekli):**
 > 🏛 Atina merkezde sıfır daireler — 250.000 €
