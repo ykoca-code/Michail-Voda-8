@@ -35,8 +35,8 @@ kampanya kurulabiliyor, bütçe değiştirilebiliyor, rapor alınabiliyor.
 | Kampanya | 120253029646810721 | `MV8 \| Lead \| Eşik \| TR` · OUTCOME_LEADS · özel kategori beyan edilmedi |
 | Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · **günlük TL 800** |
 | Reklam · GV-Esik-v2 | 120253030488610721 | kreatif 1610829687225588 |
-| Reklam · GV-Aile-v2 | 120253030489770721 | kreatif 4480918678828804 |
-| Reklam · GV-Sure-v2 | 120253030491290721 | kreatif 1837708747594035 |
+| Reklam · GV-Aile-v3 | 120253030620170721 | kreatif 1079343091275876 |
+| Reklam · GV-Sure-v3 | 120253030621160721 | kreatif 1370897995256181 |
 
 **Yalnızca Instagram.** `publisher_platforms: ["instagram"]`,
 yerleşimler: `stream`, `story`, `reels`, `explore_home`, `profile_feed`.
