@@ -11,7 +11,7 @@ Pixel bir Meta Business Portfolio içinde oluşturulur. Sırasıyla:
 2. **Create a business portfolio** → işletme adı: "Michail Voda 8", kurumsal e-posta: info@michailvoda8.com
 3. Portfolio içine ekleyin:
    - **Sayfa:** Facebook sayfası (yoksa bu adımda oluşturun)
-   - **Instagram:** @michailvoda8goldenvisa hesabını bağlayın
+   - **Instagram:** @michailvoda8 hesabını bağlayın
    - **Reklam hesabı:** yeni hesap · ülke/para birimi **sonradan değişmez** (şahsi kartla Türkiye + TRY en pratiği, %20 KDV bütçeye eklenir)
 
 ## 2. Pixel oluşturma (5 dk)
