@@ -8,15 +8,26 @@
 Tipografi: Fraunces (başlık) + Instrument Sans (metin) — site ile aynı.
 Renkler: `#241C17` zemin · `#9E3B2B` vurgu · `#F5F0EA` açık · `#D8CBBF` çizgi.
 
-## Reklam görselleri (`reklam/`)
+## Reklam görselleri (`reklam/golden-visa/`)
 
-| Dosya | Boyut | Mesaj |
-|---|---|---|
-| `mv8-reklam-1-esik.jpg` | 1080 × 1350 | 250.000 € eşiği — ana mesaj |
-| `mv8-reklam-2-kira.jpg` | 1080 × 1350 | 5 yıl · aylık 500 € kira garantisi |
-| `mv8-reklam-3-proje.jpg` | 1080 × 1350 | Ofisten konuta dönüşüm · 30 daire |
-| `mv8-story-1-esik.jpg` | 1080 × 1920 | Story / Reels — eşik mesajı |
+Yayındaki kreatif seti. Mesaj daireden değil **oturum izninden** açılıyor;
+proje ikinci planda anlatılıyor. Reklamlar yalnızca Instagram'da yayınlanıyor.
 
-4:5 oran akış (feed) yerleşimleri için, 9:16 story ve reels için. Metin bloğu
-görselin alt kısmında ve güvenli alanda; Meta'nın %20 metin kuralı kaldırıldığı
-için sınır sorunu yok.
+| Dosya | Oran | Yerleşim | Mesaj |
+|---|---|---|---|
+| `gv-esik-45.jpg` | 4:5 | akış, keşfet, profil | 800.000 € değil, 250.000 € |
+| `gv-esik-916.jpg` | 9:16 | story, reels | aynı mesaj, dikey |
+| `gv-aile-45.jpg` | 4:5 | akış, keşfet, profil | Tek başvuru, tüm aile |
+| `gv-aile-916.jpg` | 9:16 | story, reels | aynı mesaj, dikey |
+| `gv-sure-45.jpg` | 4:5 | akış, keşfet, profil | 5 yıllık oturum izni |
+| `gv-sure-916.jpg` | 9:16 | story, reels | aynı mesaj, dikey |
+
+9:16 sürümlerde metin bloğu alt %20'lik alanın üstünde bitiyor; Instagram'ın
+story arayüzü (profil adı, kaydırma çubuğu, CTA) metni kapatmıyor.
+
+Meta tarafında her reklam tek kreatif; 4:5 ve 9:16 görseller
+`asset_customization_rules` ile yerleşime göre eşleştiriliyor.
+
+Uyum: metinlerde "vatandaşlık", "pasaport", "garanti" geçmiyor; her
+gönderi "Başvuru sonucu resmi makamların takdirindedir." ile bitiyor.
+Üçüncü taraf markaların (otel tabelası vb.) göründüğü kareler kullanılmadı.

@@ -28,28 +28,44 @@ kampanya kurulabiliyor, bütçe değiştirilebiliyor, rapor alınabiliyor.
 | Piksel | 1564731061789182 · MV8 Web Pixel |
 | Minimum günlük bütçe | TL 47,88 (hesap tarafından dayatılan taban) |
 
-## İlk kampanya
+## Yayındaki kampanya
 
 | Katman | ID | Ayar |
 |---|---|---|
 | Kampanya | 120253029646810721 | `MV8 \| Lead \| Eşik \| TR` · OUTCOME_LEADS · özel kategori beyan edilmedi |
-| Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · günlük TL 800 |
-| Reklam · Esik-1 | 120253029835820721 | kreatif 1620816276360661 |
-| Reklam · Kira-1 | 120253029836600721 | kreatif 1049320634579458 |
-| Reklam · Proje-1 | 120253029836870721 | kreatif 2518671931982727 |
+| Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · **günlük TL 800** |
+| Reklam · GV-Esik | 120253030028520721 | kreatif 1051589844393051 |
+| Reklam · GV-Aile | 120253030023120721 | kreatif 1613986570246649 |
+| Reklam · GV-Sure | 120253030024340721 | kreatif 1453002393328763 |
 
-Reklam seti ayarları: dönüşüm konumu **web sitesi**, optimizasyon
-`OFFSITE_CONVERSIONS` → piksel `Lead` olayı, faturalama gösterim başına,
-teklif `LOWEST_COST_WITHOUT_CAP`. Hedefleme: Türkiye (yalnızca burada
-yaşayanlar), 33–65, Türkçe (locale 19), ilgi alanları — Gayrimenkul
-yatırımı `6003446239080`, Varlık yönetimi `6003484864669`, Yatırım
-bankacılığı `6003063638807`, Investment company `6003392721577`.
-Advantage+ kitle genişletme **kapalı** (`advantage_audience: 0`).
-Kreatiflerde metin ve görsel iyileştirmeleri **kapalı**.
+**Yalnızca Instagram.** `publisher_platforms: ["instagram"]`,
+yerleşimler: `stream`, `story`, `reels`, `explore_home`, `profile_feed`.
+Facebook yerleşimi kapalı.
 
-Bağlantılar UTM ile etiketli (`utm_source=facebook`, `utm_content=esik-1`
-vb.); `site/pixel.js` bu parametreleri yakalayıp forma gizli alan olarak
+Dönüşüm konumu web sitesi, optimizasyon `OFFSITE_CONVERSIONS` → piksel
+`Lead` olayı, faturalama gösterim başına, teklif `LOWEST_COST_WITHOUT_CAP`.
+Hedefleme: Türkiye (yalnızca burada yaşayanlar), 33–65, Türkçe (locale 19),
+ilgi alanları — Gayrimenkul yatırımı `6003446239080`, Varlık yönetimi
+`6003484864669`, Yatırım bankacılığı `6003063638807`, Investment company
+`6003392721577`. Advantage+ kitle genişletme kapalı, kreatif iyileştirmeleri kapalı.
+
+Kreatifler `asset_feed_spec` + `asset_customization_rules` kullanıyor:
+akış/keşfet/profil → 4:5, story/reels → 9:16. Görseller
+`marka/reklam/golden-visa/` altında.
+
+Bağlantılar UTM etiketli (`utm_source=instagram`, `utm_campaign=mv8-goldenvisa`,
+`utm_content=esik|aile|sure`); `site/pixel.js` bunları forma gizli alan olarak
 eklediği için her talepte hangi reklamdan geldiği görünüyor.
+
+### Mesaj yaklaşımı
+
+Reklamlar daireyi değil **oturum iznini** öne çıkarıyor: 250.000 € eşiği,
+ailenin başvuruya dahil edilmesi, iznin süresi ve Schengen seyahati. Proje
+ikinci planda, kanıt olarak anlatılıyor. Yasak kelimeler ("vatandaşlık",
+"pasaport", "garanti", "kesin onay") hiçbir metinde geçmiyor; her metin
+"Başvuru sonucu resmi makamların takdirindedir." ile bitiyor.
+
+Daire odaklı ilk üç reklam (Esik-1, Kira-1, Proje-1) yayınlanmadan silindi.
 
 ## API notları (tekrar takılmamak için)
 
