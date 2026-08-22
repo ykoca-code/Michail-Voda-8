@@ -1,0 +1,635 @@
+<title>MV8 Satış Kiti</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --bg:#FAF7F3; --panel:#FFFFFF; --ink:#211914; --soft:#6E6055;
+  --hair:#E3D9CE; --accent:#9E3B2B; --accent-soft:#F3E2DC;
+  --ok:#3D5941; --ok-soft:#E4EBE2; --dark:#241C17;
+  --shadow:0 1px 2px rgba(33,25,20,.05), 0 8px 24px -12px rgba(33,25,20,.14);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#17120E; --panel:#211A15; --ink:#F2EAE2; --soft:#A99787;
+    --hair:#3A2E26; --accent:#E08D74; --accent-soft:#3A241D;
+    --ok:#9CBE9C; --ok-soft:#22301F; --dark:#0F0B08;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17120E; --panel:#211A15; --ink:#F2EAE2; --soft:#A99787;
+  --hair:#3A2E26; --accent:#E08D74; --accent-soft:#3A241D;
+  --ok:#9CBE9C; --ok-soft:#22301F; --dark:#0F0B08;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.55;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:56rem; margin:0 auto; padding:0 1.1rem}
+
+/* ---------- başlık ---------- */
+header{padding:1.6rem 0 1.1rem}
+.brand{display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap}
+.brand h1{
+  font-family:var(--serif); font-weight:600; font-size:1.5rem;
+  margin:0; letter-spacing:-.01em;
+}
+.brand .no{color:var(--accent)}
+.brand small{
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--soft);
+}
+.tagline{color:var(--soft); font-size:.92rem; margin:.45rem 0 0}
+
+/* ---------- sekmeler ---------- */
+nav{
+  position:sticky; top:0; z-index:20; background:var(--bg);
+  border-bottom:1px solid var(--hair); margin-bottom:1.4rem;
+}
+.tabs{
+  display:flex; gap:.3rem; overflow-x:auto; padding:.55rem 0;
+  scrollbar-width:none; -ms-overflow-style:none;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{
+  flex:0 0 auto; font:500 .85rem/1 var(--sans); color:var(--soft);
+  background:transparent; border:1px solid transparent; border-radius:999px;
+  padding:.5rem .85rem; cursor:pointer; white-space:nowrap;
+  transition:background .12s, color .12s, border-color .12s;
+}
+.tabs button:hover{color:var(--ink); background:var(--panel)}
+.tabs button[aria-selected="true"]{
+  background:var(--accent-soft); color:var(--accent); border-color:var(--accent);
+}
+.tabs button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* ---------- bölümler ---------- */
+section[hidden]{display:none}
+section{padding-bottom:3.5rem; animation:in .18s ease-out}
+@keyframes in{from{opacity:0; transform:translateY(3px)}to{opacity:1; transform:none}}
+@media (prefers-reduced-motion:reduce){section{animation:none}}
+
+h2{
+  font-family:var(--serif); font-weight:600; font-size:1.22rem;
+  margin:2rem 0 .8rem; letter-spacing:-.01em; text-wrap:balance;
+}
+h2:first-child{margin-top:.2rem}
+h3{font-size:.95rem; font-weight:600; margin:1.3rem 0 .5rem}
+p{margin:.5rem 0}
+.lead{color:var(--soft); font-size:.95rem; margin-top:0}
+
+.eyebrow{
+  font-family:var(--mono); font-size:.66rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--soft); display:block; margin-bottom:.3rem;
+}
+
+/* ---------- kartlar ---------- */
+.card{
+  background:var(--panel); border:1px solid var(--hair); border-radius:12px;
+  padding:1rem 1.1rem; box-shadow:var(--shadow); margin:.7rem 0;
+}
+.grid{display:grid; gap:.7rem}
+@media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
+
+/* ---------- veri satırları ---------- */
+.rows{display:flex; flex-direction:column}
+.row{
+  display:flex; justify-content:space-between; align-items:baseline; gap:1rem;
+  padding:.62rem 0; border-bottom:1px solid var(--hair);
+}
+.row:last-child{border-bottom:0}
+.row .k{color:var(--soft); font-size:.88rem}
+.row .v{
+  font-family:var(--mono); font-weight:500; font-size:.92rem;
+  text-align:right; font-variant-numeric:tabular-nums;
+}
+.row.hi .v{color:var(--accent); font-weight:600}
+.row .note{display:block; font-family:var(--sans); font-size:.74rem; color:var(--soft); font-weight:400}
+
+/* ---------- konuşma bloğu ---------- */
+.beat{
+  border-left:3px solid var(--hair); padding:.1rem 0 .1rem 1rem; margin:1.1rem 0;
+}
+.beat .lbl{
+  font-family:var(--mono); font-size:.68rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--accent); font-weight:600;
+}
+.beat .sec{font-family:var(--mono); font-size:.68rem; color:var(--soft); float:right}
+.say{
+  font-size:1rem; line-height:1.6; margin:.4rem 0 0;
+}
+.say em{font-style:normal; background:var(--accent-soft); padding:0 .18em; border-radius:3px}
+.why{font-size:.84rem; color:var(--soft); margin:.4rem 0 0}
+
+/* ---------- kopyalanabilir şablon ---------- */
+.tpl{
+  background:var(--panel); border:1px solid var(--hair); border-radius:12px;
+  overflow:hidden; margin:.8rem 0; box-shadow:var(--shadow);
+}
+.tpl-head{
+  display:flex; justify-content:space-between; align-items:center; gap:.8rem;
+  padding:.6rem .9rem; border-bottom:1px solid var(--hair); background:var(--bg);
+}
+.tpl-head .t{font-weight:600; font-size:.87rem}
+.tpl-head .t span{display:block; font-weight:400; font-size:.76rem; color:var(--soft)}
+.copy{
+  flex:0 0 auto; font:600 .74rem/1 var(--mono); letter-spacing:.04em;
+  color:var(--accent); background:var(--accent-soft);
+  border:1px solid var(--accent); border-radius:7px;
+  padding:.42rem .6rem; cursor:pointer; transition:.12s;
+}
+.copy:hover{background:var(--accent); color:var(--panel)}
+.copy:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.copy.done{background:var(--ok-soft); border-color:var(--ok); color:var(--ok)}
+.tpl pre{
+  margin:0; padding:.9rem; font-family:var(--sans); font-size:.9rem;
+  line-height:1.55; white-space:pre-wrap; word-wrap:break-word;
+}
+
+/* ---------- itirazlar ---------- */
+details{
+  background:var(--panel); border:1px solid var(--hair); border-radius:12px;
+  margin:.55rem 0; overflow:hidden;
+}
+details[open]{box-shadow:var(--shadow)}
+summary{
+  cursor:pointer; padding:.85rem 1rem; font-weight:600; font-size:.94rem;
+  list-style:none; display:flex; align-items:center; gap:.6rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{
+  content:"›"; font-family:var(--mono); color:var(--accent); font-size:1.15rem;
+  transition:transform .15s; flex:0 0 auto;
+}
+details[open] summary::before{transform:rotate(90deg)}
+summary:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.answer{padding:0 1rem 1rem 2.2rem; border-top:1px solid var(--hair); padding-top:.8rem}
+.answer p:first-child{margin-top:0}
+
+/* ---------- söyle / söyleme ---------- */
+.chips{display:flex; flex-direction:column; gap:.5rem; margin:.6rem 0}
+.chip{
+  display:flex; gap:.7rem; align-items:flex-start;
+  padding:.7rem .9rem; border-radius:10px; font-size:.92rem;
+}
+.chip .mk{
+  font-family:var(--mono); font-size:.7rem; font-weight:600; letter-spacing:.06em;
+  flex:0 0 auto; padding-top:.14rem;
+}
+.chip.yes{background:var(--ok-soft); border:1px solid var(--ok)}
+.chip.yes .mk{color:var(--ok)}
+.chip.no{background:var(--dark); border:1px solid var(--dark); color:#EDE2D8}
+.chip.no .mk{color:#E08D74}
+.chip.no b{color:#fff}
+
+/* ---------- uyarı ---------- */
+.warn{
+  border:1px dashed var(--accent); background:var(--accent-soft);
+  border-radius:12px; padding:.9rem 1.05rem; margin:1rem 0; font-size:.9rem;
+}
+.warn strong{color:var(--accent)}
+
+ul{margin:.5rem 0; padding-left:1.15rem}
+li{margin:.3rem 0; font-size:.94rem}
+footer{
+  border-top:1px solid var(--hair); padding:1.2rem 0 2.5rem;
+  color:var(--soft); font-size:.8rem;
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <h1>Michail Voda <span class="no">8</span></h1>
+    <small>Satış Kiti</small>
+  </div>
+  <p class="tagline">Telefonda ve WhatsApp'ta kullanılmak üzere. Rakamlar sabit, cümleler hazır, sınırlar belli.</p>
+</header>
+
+<nav>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-t="rakamlar">Rakamlar</button>
+    <button role="tab" aria-selected="false" data-t="vize">Golden Visa</button>
+    <button role="tab" aria-selected="false" data-t="telefon">Telefon</button>
+    <button role="tab" aria-selected="false" data-t="whatsapp">WhatsApp</button>
+    <button role="tab" aria-selected="false" data-t="itiraz">İtirazlar</button>
+    <button role="tab" aria-selected="false" data-t="sinir">Sınırlar</button>
+  </div>
+</nav>
+
+<!-- ===================== RAKAMLAR ===================== -->
+<section id="rakamlar">
+  <span class="eyebrow">Ezberlenecek</span>
+  <h2>Alıcının ödeyeceği toplam</h2>
+  <div class="card">
+    <div class="rows">
+      <div class="row"><span class="k">Daire bedeli</span><span class="v">250.000 €</span></div>
+      <div class="row"><span class="k">Satın alım vergisi</span><span class="v">7.725 €</span></div>
+      <div class="row hi"><span class="k"><b>Ayırması gereken bütçe</b></span><span class="v">257.725 €</span></div>
+      <div class="row"><span class="k">Avukat · noter · kadastro · sigorta<span class="note">Satıcı karşılar — alıcının cebinden çıkmaz</span></span><span class="v">12.000–15.000 €</span></div>
+    </div>
+  </div>
+  <p class="lead">"Toplam ne kadar?" sorusunun cevabı tek rakam: <b>257.725 €</b>. Masrafları biz karşıladığımız için gerçek toplam maliyeti bu; rakibin 250.000 € deyip üstüne masraf ekleyeceğini alıcı genelde sonradan öğrenir. Bunu erken söyleyin.</p>
+
+  <h2>Alıcının geri alacağı</h2>
+  <div class="card">
+    <div class="rows">
+      <div class="row"><span class="k">Kira garantisi</span><span class="v">aylık 500 €</span></div>
+      <div class="row"><span class="k">Süre</span><span class="v">5 yıl</span></div>
+      <div class="row hi"><span class="k">Toplam kira geliri</span><span class="v">30.000 €</span></div>
+      <div class="row"><span class="k">Başlangıç</span><span class="v">teslimden itibaren</span></div>
+    </div>
+  </div>
+
+  <h2>Proje</h2>
+  <div class="card">
+    <div class="rows">
+      <div class="row"><span class="k">Konum</span><span class="v">8 Michail Voda Sk.<span class="note">104 39 Atina, merkez</span></span></div>
+      <div class="row"><span class="k">Tür</span><span class="v">ofisten konuta dönüşüm</span></div>
+      <div class="row"><span class="k">Daire sayısı</span><span class="v">30 daire</span></div>
+      <div class="row hi"><span class="k">Müsait</span><span class="v">12 daire<span class="note">1–3. katlar</span></span></div>
+      <div class="row"><span class="k">Büyüklük</span><span class="v">29–49 m²</span></div>
+      <div class="row"><span class="k">Teslim</span><span class="v">Aralık 2026<span class="note">eşyalı</span></span></div>
+      <div class="row"><span class="k">Mimari</span><span class="v">Gavalas·Ioannidou</span></div>
+      <div class="row"><span class="k">Hukuk</span><span class="v">Ramadanoglou Politis<span class="note">Kolonaki, Atina</span></span></div>
+    </div>
+  </div>
+
+  <div class="warn">
+    <strong>Stok azlığını abartmayın.</strong> "12 daire kaldı" doğru ve yeterince güçlü. "Son 2 daire", "yarın zam geliyor" gibi uydurma aciliyet bu segmentte ters teper — 250.000 € harcayacak kişi baskıyı amatörlük sayar.
+  </div>
+</section>
+
+<!-- ===================== GOLDEN VISA ===================== -->
+<section id="vize" hidden>
+  <span class="eyebrow">Doğrulanmış bilgi</span>
+  <h2>Neden 250.000 €?</h2>
+  <div class="card">
+    <p style="margin-top:0">Yunanistan'da yatırım yoluyla oturum izni eşiği bölgeye göre değişiyor: <b>Atina, Selanik, Miykonos, Santorini gibi yoğun bölgelerde 800.000 €</b>, ülkenin geri kalanında 400.000 €.</p>
+    <p><b>Ancak</b> ticari bir binanın konuta dönüştürülmesi ya da tarihi bir yapının restorasyonu söz konusuysa, konumdan bağımsız olarak <b style="color:var(--accent)">250.000 € eşiği</b> uygulanıyor. Michail Voda 8 tam olarak bu istisna kapsamında: Atina merkezde bir ofis binası konuta dönüştürülüyor.</p>
+    <p class="why">Bu bizim tek en güçlü argümanımız. Alıcı başka yerde Atina merkezde 250.000 € ile bu programa giremez.</p>
+  </div>
+
+  <h2>İzin ne veriyor</h2>
+  <div class="card">
+    <div class="rows">
+      <div class="row"><span class="k">Süre</span><span class="v">5 yıl</span></div>
+      <div class="row"><span class="k">Yenileme</span><span class="v">yatırım durdukça<span class="note">süresiz yenilenebilir</span></span></div>
+      <div class="row"><span class="k">Asgari kalma şartı</span><span class="v">yok</span></div>
+      <div class="row"><span class="k">Schengen</span><span class="v">180 günde 90 gün</span></div>
+      <div class="row"><span class="k">Çalışma</span><span class="v">ücretli çalışma yok<span class="note">şirket kurulabilir, ortak olunabilir</span></span></div>
+    </div>
+  </div>
+
+  <h2>Kimler dahil</h2>
+  <div class="card">
+    <ul style="margin:0">
+      <li>Eş</li>
+      <li>21 yaşından küçük çocuklar</li>
+      <li>Başvuranın anne-babası</li>
+      <li>Eşin anne-babası</li>
+    </ul>
+    <p class="why">Dört kişilik bir aile + iki taraf ebeveyn = tek yatırımla 8 kişiye kadar. Alıcı bunu genelde bilmiyor; söyleyince teklifin değeri katlanıyor.</p>
+  </div>
+
+  <h2>Kısa dönem kiralama yasağı</h2>
+  <div class="card">
+    <p style="margin-top:0">Golden Visa kapsamında alınan mülkler <b>Airbnb gibi kısa dönem kiralamaya kapalı.</b> Bu bir dezavantaj gibi sorulabilir — değil, çünkü bizde zaten 5 yıllık uzun dönem kira garantisi var.</p>
+    <p class="say" style="font-size:.95rem">"Zaten kısa dönem kiralamaya izin verilmiyor — biz de bu yüzden 5 yıllık uzun dönem kira garantisi veriyoruz. Siz kiracı aramıyorsunuz, boş kalma riski taşımıyorsunuz."</p>
+  </div>
+</section>
+
+<!-- ===================== TELEFON ===================== -->
+<section id="telefon" hidden>
+  <span class="eyebrow">15 dakikalık görüşme</span>
+  <h2>Görüşme akışı</h2>
+  <p class="lead">Amaç satmak değil — <b>nitelemek</b> ve <b>ikinci görüşmeye geçmek</b>. İlk aramada kimse 250.000 € harcamaz.</p>
+
+  <div class="beat">
+    <span class="sec">0:00–0:20</span>
+    <span class="lbl">1 · Açılış</span>
+    <p class="say">"Merhaba <em>[isim]</em>, ben Michail Voda 8'den arıyorum — sitemizden bilgi talebi bırakmıştınız. Şu an konuşmak için uygun musunuz? <em>15 dakikanızı</em> alacağım."</p>
+    <p class="why">Süreyi baştan söylemek kapatma oranını düşürür. "Uygun musunuz" sorusunu gerçekten sorun; uygun değilse randevu alıp kapatın.</p>
+  </div>
+
+  <div class="beat">
+    <span class="sec">0:20–4:00</span>
+    <span class="lbl">2 · Keşif — çok soru, az konuşma</span>
+    <p class="say">"Size doğru bilgi verebilmem için birkaç şey sorayım."</p>
+    <ul>
+      <li><b>Kaç kişi için düşünüyorsunuz?</b> — aile büyüklüğü teklifin değerini belirler</li>
+      <li><b>Sizi bu programa yönelten ne oldu?</b> — çocuk eğitimi mi, plan B mi, yatırım mı, seyahat mi</li>
+      <li><b>Başka ülkeleri de araştırdınız mı?</b> — Portekiz/İspanya karşılaştırması gelirse hazırlıklı olun</li>
+      <li><b>Zamanlama olarak ne düşünüyorsunuz?</b> — 0–3 ay mı, bu yıl mı, araştırma aşaması mı</li>
+      <li><b>Bütçeyi nasıl planlıyorsunuz?</b> — hazır mı, satış bekliyor mu, kredi mi (kredi ile bu program yürümez)</li>
+      <li><b>Atina'ya daha önce gittiniz mi?</b> — gitmişse konuşma çok kolaylaşır</li>
+    </ul>
+    <p class="why">Cevapları yazın. Bu notlar ikinci görüşmenin tamamını kurar ve WhatsApp takibini kişiselleştirir.</p>
+  </div>
+
+  <div class="beat">
+    <span class="sec">4:00–8:00</span>
+    <span class="lbl">3 · Anlatım — keşfe göre seçin</span>
+    <p class="say">"Size en çok ilgilendiren tarafından anlatayım."</p>
+    <ul>
+      <li><b>Aile odaklıysa</b> → dahil olan kişiler, çocukların 21 yaş sınırı, ebeveynler</li>
+      <li><b>Yatırım odaklıysa</b> → 5 yıl × 500 €, masrafları satıcının karşılaması, Atina merkez konum</li>
+      <li><b>Fiyat odaklıysa</b> → 800.000 € eşiğinin istisnası, 257.725 € toplam</li>
+      <li><b>Seyahat odaklıysa</b> → 5 yıl, kalma zorunluluğu yok, Schengen</li>
+    </ul>
+    <p class="why">Dördünü birden anlatmayın. Keşifte ne dediyse ondan girin — kalanı ikinci görüşmeye bırakın.</p>
+  </div>
+
+  <div class="beat">
+    <span class="sec">8:00–12:00</span>
+    <span class="lbl">4 · Sorular ve itirazlar</span>
+    <p class="say">"Aklınıza takılan ne var?"</p>
+    <p class="why">İtirazlar sekmesindeki cevaplar. Bilmediğiniz bir şey sorulursa: <b>"Bunu avukatımıza sorup bugün içinde net cevabını yazayım."</b> Uydurmak, bir satışı kaybetmekten pahalıya patlar.</p>
+  </div>
+
+  <div class="beat">
+    <span class="sec">12:00–15:00</span>
+    <span class="lbl">5 · Somut sonraki adım</span>
+    <p class="say">"Şimdi şunu yapalım: <em>bugün</em> size fiyat listesini, kat planlarını ve süreç dosyasını göndereyim. <em>Perşembe öğleden sonra</em> tekrar konuşup sorularınızı netleştirelim — size uyar mı?"</p>
+    <p class="why">Belirsiz "düşünün, ararız" ile bitirmeyin. Gün ve saat söyleyin, takvime yazın. Görüşmeyi kapatmadan WhatsApp'tan özet mesajı gönderin (WhatsApp sekmesi, şablon 3).</p>
+  </div>
+
+  <div class="warn">
+    <strong>Aramadan önce 30 saniye:</strong> Formdaki kişi sayısı ve zamanlama bilgisine bakın. Reklamdan mı geldiğini de görürsünüz — Meta'dan gelen kişi Instagram'da "250.000 € eşiği" reklamını görmüştür, Google'dan gelen kişi aktif olarak "yunanistan golden visa" aramıştır. İkincisi daha niyetlidir.
+  </div>
+</section>
+
+<!-- ===================== WHATSAPP ===================== -->
+<section id="whatsapp" hidden>
+  <span class="eyebrow">Kopyala, ismi değiştir, gönder</span>
+  <h2>Mesaj şablonları</h2>
+  <p class="lead">WhatsApp'ta uzun mesaj okunmaz. Şablonlar kısa tutuldu; her biri bir soruyla bitiyor — soru sohbeti açık tutar.</p>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">1 · İlk cevap<span>"Bilgi alabilir miyim?" mesajına</span></div><button class="copy">Kopyala</button></div>
+    <pre>Merhaba, ilginiz için teşekkürler.
+
+Michail Voda 8, Atina'nın merkezinde bir ofis binasının konuta dönüştürüldüğü 30 daireli bir proje. Daireler 29–49 m², eşyalı teslim ediliyor, teslim tarihi Aralık 2026.
+
+Kısaca rakamlar:
+• Daire fiyatı 250.000 € (sabit)
+• Satın alım vergisi 7.725 €
+• Avukat, noter, kadastro ve sigorta masraflarını biz karşılıyoruz
+• Teslimden itibaren 5 yıl boyunca aylık 500 € kira garantisi
+
+Yunanistan'ın yatırım yoluyla oturum izni programında dönüşüm projeleri 250.000 € eşiğine tabi — Atina'daki 800.000 € eşiğinin istisnası. Başvuruya eşiniz, 21 yaş altı çocuklarınız ve her iki tarafın ebeveynleri dahil edilebiliyor.
+
+Size uygun bir zamanda 15 dakikalık kısa bir görüşme yapalım mı? Kat planlarını, fiyat listesini ve süreç dosyasını da iletebilirim.
+
+Bu arada kaç kişi için düşünüyorsunuz?</pre>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">2 · "Toplam maliyet ne kadar?"<span>En sık gelen soru</span></div><button class="copy">Kopyala</button></div>
+    <pre>Ayırmanız gereken toplam bütçe 257.725 €.
+
+• Daire bedeli: 250.000 €
+• Satın alım vergisi: 7.725 €
+
+Avukatlık, noter, kadastro ve sigorta masraflarını (yaklaşık 13.500 €) biz karşılıyoruz — bunlar sizin cebinizden çıkmıyor.
+
+Buna karşılık teslimden itibaren 5 yıl boyunca aylık 500 € kira alıyorsunuz; toplamda 30.000 €.
+
+Detaylı tabloyu ve kat planlarını göndereyim mi?</pre>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">3 · Görüşme sonrası özet<span>Telefonu kapatır kapatmaz</span></div><button class="copy">Kopyala</button></div>
+    <pre>Merhaba [isim], görüşmemiz için teşekkürler.
+
+Konuştuklarımızın özeti:
+• Daire 250.000 €, satın alım vergisiyle toplam 257.725 €
+• Avukat, noter, kadastro, sigorta bizde
+• 5 yıl boyunca aylık 500 € kira garantisi
+• Teslim Aralık 2026, eşyalı
+• Başvuruya [X] kişi dahil edilebiliyor
+
+Fiyat listesi, kat planları ve süreç dosyası ekte.
+
+[gün] günü [saat] için görüşmemizi not aldım. Öncesinde aklınıza bir soru gelirse buradan yazabilirsiniz.</pre>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">4 · Cevap gelmedi — 2. gün<span>Nazik, baskısız</span></div><button class="copy">Kopyala</button></div>
+    <pre>Merhaba [isim], dosyalar elinize ulaştı mı?
+
+Sık sorulan bir konuyu ekleyeyim: başvuruya eşiniz, 21 yaş altı çocuklarınız ve hem sizin hem eşinizin anne-babası dahil edilebiliyor. Tek yatırımla tüm aile.
+
+Aklınıza takılan bir şey olursa yazmanız yeterli.</pre>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">5 · Bir hafta sessizlik<span>Son dokunuş — sonra bırakın</span></div><button class="copy">Kopyala</button></div>
+    <pre>Merhaba [isim], sizi rahatsız etmeyeyim — sadece bir bilgi paylaşmak istedim.
+
+Şu an 12 daire müsait durumda. Karar aşamasında olmadığınızı biliyorum; ilerleyen dönemde tekrar değerlendirmek isterseniz numaram burada.
+
+Site: michailvoda8.com</pre>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-head"><div class="t">6 · "Yunanistan'a gitmem gerekir mi?"<span>Süreç sorusu</span></div><button class="copy">Kopyala</button></div>
+    <pre>Yunanistan'da asgari kalma zorunluluğu yok — izni aldıktan sonra hiç yaşamak zorunda değilsiniz, yılda bir gün bile.
+
+Satın alma ve başvuru sürecinde ise biyometrik veri (parmak izi) için bir kez gitmeniz gerekiyor. Kalan işlemler vekâletle Atina'daki hukuk büromuz üzerinden yürüyor.
+
+Süreci adım adım anlatan dosyayı göndereyim mi?</pre>
+  </div>
+
+  <div class="warn">
+    <strong>WhatsApp kuralları:</strong> Mesaj gelince <b>2 saat içinde</b> dönün — bu segmentte birden fazla firmayla konuşuyorlar, ilk cevap veren öne geçer. Sesli mesaj atmayın, yazın. Emoji kullanmayın. Fiyatı asla saklamayın; "özel fiyat için arayın" demek güven kaybettirir.
+  </div>
+</section>
+
+<!-- ===================== İTİRAZLAR ===================== -->
+<section id="itiraz" hidden>
+  <span class="eyebrow">Hazır cevaplar</span>
+  <h2>Gelen itirazlar</h2>
+  <p class="lead">İtiraz kötü sinyal değil — ilgi sinyalidir. İlgilenmeyen itiraz etmez, kapatır.</p>
+
+  <details>
+    <summary>"29 m² çok küçük değil mi?"</summary>
+    <div class="answer">
+      <p>Doğru soru. Burada oturmak için değil, <b>programa girmek ve kira geliri elde etmek</b> için alıyorsunuz. Atina merkezde 29 m² stüdyo daireler öğrenci ve genç profesyonel kiracıların en çok aradığı tip — bu yüzden 5 yıllık kira garantisini rahatlıkla verebiliyoruz.</p>
+      <p>Daha büyük daire isterseniz 49 m²'ye kadar seçenek var, fiyat yine 250.000 €.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Bu fiyata Yunanistan'da daha büyük ev alınır"</summary>
+    <div class="answer">
+      <p>Kesinlikle — ama Atina merkezde değil, ve daha önemlisi <b>o ev sizi Golden Visa programına sokmaz.</b> Atina'da normal bir konut alımıyla programa girmek için 800.000 € gerekiyor.</p>
+      <p>250.000 € eşiği yalnızca dönüşüm ve restorasyon projelerinde geçerli. Yani karşılaştırma "250.000 € ev" ile değil, "800.000 € ev" ile yapılmalı.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Teslim Aralık 2026 — o zamana kadar beklemem gerekir mi?"</summary>
+    <div class="answer">
+      <p>Binanın konuta dönüşümü tamamlandığında satın alma işlemi yapılabiliyor; <b>oturum izni başvurusu daire anahtar teslimi beklemeden başlatılabiliyor.</b></p>
+      <p>Süreç ve tam zamanlama alıcının durumuna göre değiştiği için, size özel takvimi Atina'daki hukuk büromuz netleştiriyor — görüşmemizde bunu birlikte planlayabiliriz.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Kira garantisini kim veriyor, batarsanız ne olur?"</summary>
+    <div class="answer">
+      <p>Kira garantisi satış sözleşmesine yazılı olarak giriyor — sözlü bir taahhüt değil, <b>noter huzurunda imzalanan sözleşmenin maddesi.</b></p>
+      <p>Sözleşmeyi imzalamadan önce avukatınız (isterseniz kendi seçtiğiniz bağımsız avukat) tüm metni inceleyebilir. Zaten avukatlık masrafını biz karşılıyoruz.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Sizi tanımıyorum, dolandırıcılık olmadığını nereden bileyim?"</summary>
+    <div class="answer">
+      <p>Haklı bir soru, sormanız iyi. Üç somut cevap:</p>
+      <ul>
+        <li>Süreci Atina Kolonaki'deki <b>Ramadanoglou Politis Legal Group</b> yürütüyor — bağımsız, kayıtlı bir hukuk bürosu, doğrulayabilirsiniz.</li>
+        <li>Mimari proje <b>Gavalas·Ioannidou Architecture</b>'a ait, bina Atina Belediyesi'nde kayıtlı bir adreste: 8 Michail Voda Sk.</li>
+        <li>Para bize elden geçmiyor — <b>tapu devri noter huzurunda</b>, ödeme banka kanalıyla yapılıyor.</li>
+      </ul>
+      <p>Dilerseniz Atina'ya gelip binayı yerinde görebilirsiniz.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Vatandaşlık da alabilir miyim?"</summary>
+    <div class="answer">
+      <p>Bu program <b>oturum izni</b> veriyor, vatandaşlık vermiyor — ikisi ayrı süreçler.</p>
+      <p>Yunan vatandaşlığı için ülkede <b>fiilen 7 yıl ikamet</b> etmek, B1 seviyesinde Yunanca bilmek ve entegrasyon sınavını geçmek gerekiyor. Oturum izni sahibi olmak bu sürecin ön koşulunu sağlar ama otomatik bir hak doğurmaz.</p>
+      <p class="why">Bu cevabı net verin. Vatandaşlık vaadi hem yanlış hem reklam politikalarına aykırı.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Airbnb yapabilir miyim?"</summary>
+    <div class="answer">
+      <p>Hayır — Golden Visa kapsamında alınan mülkler kısa dönem kiralamaya kapalı.</p>
+      <p>Ama bu sizin için kayıp değil: zaten 5 yıl boyunca aylık 500 € garantili kira alıyorsunuz. Kiracı arama, boş kalma, temizlik, yönetim derdi yok.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Sonra satabilir miyim?"</summary>
+    <div class="answer">
+      <p>Mülk sizin, satabilirsiniz. Ancak <b>satarsanız oturum izninizin dayanağı ortadan kalkar</b> ve izin yenilenmez.</p>
+      <p>Uygulamada yatırımcılar mülkü elde tutup izni yeniliyor; satış genelde vatandaşlık ya da kalıcı ikamet gibi başka bir statüye geçtikten sonra düşünülüyor.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Portekiz / İspanya daha iyi değil mi?"</summary>
+    <div class="answer">
+      <p>Portekiz'in Golden Visa programı 2023'te gayrimenkul yatırımını kapsam dışı bıraktı — artık konut alarak giremiyorsunuz. İspanya da programını sonlandırdı.</p>
+      <p>Yunanistan bu haliyle <b>Avrupa'da gayrimenkulle oturum izni alınabilen az sayıdaki ülkeden biri</b>, ve 250.000 € eşiğiyle en düşük girişi sunuyor.</p>
+      <p class="why">Mevzuat değişebilir — bu bilgiyi görüşmeden önce teyit edin, tarih vermeyin.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>"Düşüneyim, size dönerim"</summary>
+    <div class="answer">
+      <p>Tabii, doğal. Şunu sorabilir miyim: <b>kafanızda net olmayan tek şey ne?</b></p>
+      <p class="why">Bu soru gerçek itirazı açığa çıkarır. Genelde "düşüneceğim" demek — eşimle konuşmalıyım / parayı henüz ayıramadım / güvenmiyorum demektir. Hangisi olduğunu öğrenmeden takip planı kuramazsınız.</p>
+      <p>Öğrendikten sonra: "Anladım. Size [X] konusunda net bilgi göndereyim, [gün] günü tekrar konuşalım mı?"</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== SINIRLAR ===================== -->
+<section id="sinir" hidden>
+  <span class="eyebrow">Uyum</span>
+  <h2>Asla söylenmeyecekler</h2>
+  <p class="lead">Bu ifadeler hem gerçeğe aykırı hem de Meta ve Google'ın göçmenlik reklamı politikalarını ihlal ediyor. Bir tanesi bile reklam hesabının kapanmasına yol açabilir.</p>
+
+  <div class="chips">
+    <div class="chip no"><span class="mk">ASLA</span><div><b>"Vatandaşlık alacaksınız"</b> — program oturum izni veriyor, vatandaşlık ayrı ve 7 yıllık fiili ikamet gerektiriyor.</div></div>
+    <div class="chip no"><span class="mk">ASLA</span><div><b>"Vize garantili" / "kesin onay" / "%100"</b> — başvuruyu resmi makamlar değerlendirir, hiçbir satıcı sonucu garanti edemez.</div></div>
+    <div class="chip no"><span class="mk">ASLA</span><div><b>"Pasaport veriyoruz"</b> — hiçbir bağlamda kullanılmaz.</div></div>
+    <div class="chip no"><span class="mk">ASLA</span><div><b>"Yunanistan Göçmenlik Bakanlığı onaylı"</b> gibi resmi kurum çağrışımı yapan ifadeler.</div></div>
+    <div class="chip no"><span class="mk">ASLA</span><div><b>Uydurma aciliyet</b> — "son 2 daire", "yarın zam", "bugün karar verirseniz indirim".</div></div>
+    <div class="chip no"><span class="mk">ASLA</span><div><b>Bilmediğiniz bir cevabı uydurmak.</b> "Avukatımıza sorup bugün yazayım" demek her zaman daha güçlüdür.</div></div>
+  </div>
+
+  <h2>Bunun yerine</h2>
+  <div class="chips">
+    <div class="chip yes"><span class="mk">DOĞRU</span><div><b>"Oturum izni başvurusu"</b> — izni devlet verir, biz başvuruyu yürütürüz.</div></div>
+    <div class="chip yes"><span class="mk">DOĞRU</span><div><b>"Başvuru sonucu resmi makamların takdirindedir."</b> — yazılı her belgede bu cümle geçsin.</div></div>
+    <div class="chip yes"><span class="mk">DOĞRU</span><div><b>"5 yıl geçerli, yatırım durdukça yenilenebilir"</b> — süre hakkında tek doğru ifade.</div></div>
+    <div class="chip yes"><span class="mk">DOĞRU</span><div><b>"12 daire müsait"</b> — gerçek stok, gerçek kıtlık. Yeterince ikna edici.</div></div>
+  </div>
+
+  <h2>Teyit bekleyen konu</h2>
+  <div class="warn">
+    <p style="margin-top:0"><strong>"Teslim beklemeden başvuru" iddiası.</strong> Sitede ve reklamlarda, oturum izni başvurusunun daire teslimi beklenmeden yapılabildiğini söylüyoruz. Bu bilgi projeden geliyor ancak <b>Ramadanoglou Politis'ten yazılı teyit henüz alınmadı</b> — başvurunun hangi aşamada (ön sözleşme mi, tapu devri mi) kabul edildiği netleşmiş değil.</p>
+    <p style="margin-bottom:0">Müşteriye <b>kesin tarih ve kesin aşama vaat etmeyin.</b> "Başvuru teslim beklemeden başlatılabiliyor, size özel takvimi hukuk büromuz netleştiriyor" deyip geçin. Yazılı teyit geldiğinde bu kutu kaldırılacak.</p>
+  </div>
+
+  <h2>Kişisel veri</h2>
+  <div class="card">
+    <p style="margin-top:0">Formdan ve WhatsApp'tan gelen isim, telefon ve e-posta KVKK kapsamında kişisel veri. Bunları üçüncü kişilerle paylaşmayın, listelerini dışarı çıkarmayın. Müşteri "verilerimi silin" derse silin ve teyit edin.</p>
+    <p style="margin-bottom:0">Aydınlatma metni: <b>michailvoda8.com/kvkk</b></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="padding:0">
+    Michail Voda 8 · İç kullanım · WhatsApp +90 536 569 68 96 · michailvoda8.com<br>
+    Rakamlar 22 Ağustos 2026 itibarıyladır. Fiyat veya koşul değişirse bu kit güncellenir.
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section'));
+  function show(id){
+    tabs.forEach(function(b){ b.setAttribute('aria-selected', String(b.dataset.t === id)); });
+    secs.forEach(function(s){ s.hidden = (s.id !== id); });
+    window.scrollTo({top:0, behavior:'instant'});
+    try{ localStorage.setItem('mv8kit', id); }catch(e){}
+  }
+  tabs.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.t); }); });
+  try{
+    var saved = localStorage.getItem('mv8kit');
+    if (saved && document.getElementById(saved)) show(saved);
+  }catch(e){}
+
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var txt = btn.closest('.tpl').querySelector('pre').textContent;
+      function done(){
+        var old = btn.textContent;
+        btn.textContent = 'Kopyalandı'; btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done).catch(fallback);
+      } else { fallback(); }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = txt; ta.style.position='fixed'; ta.style.opacity='0';
+        document.body.appendChild(ta); ta.select();
+        try{ document.execCommand('copy'); done(); }catch(e){}
+        document.body.removeChild(ta);
+      }
+    });
+  });
+})();
+</script>
