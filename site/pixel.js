@@ -14,6 +14,30 @@
   };
 })();
 
+/* WhatsApp tıklaması = talep
+   ------------------------------------------------------------------
+   Site genelinde [data-wa] taşıyan her bağlantı için çalışır.
+   WhatsApp'a yazan kişi forma girmiyor ama bir taleptir; Meta'nın
+   dönüşüm optimizasyonu yapabilmesi için Lead olarak da sayılır.
+   Formdan gelen Lead ile karışmasın diye content_name ayırır.   */
+
+(function () {
+  function bagla() {
+    document.querySelectorAll('[data-wa]').forEach(function (el) {
+      if (el.dataset.waBagli) return;
+      el.dataset.waBagli = '1';
+      el.addEventListener('click', function () {
+        window.mv8Track('WhatsAppTiklama');
+        window.mv8Track('Lead', { content_name: 'WhatsApp', content_category: 'Golden Visa' });
+        if (typeof window.mv8Google === 'function') window.mv8Google('Lead');
+      });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bagla);
+  else bagla();
+  window.mv8WaBagla = bagla;
+})();
+
 /* Trafik kaynağı takibi
    ------------------------------------------------------------------
    Ziyaretçi reklamdan geldiyse URL'deki gclid / fbclid / utm_*
