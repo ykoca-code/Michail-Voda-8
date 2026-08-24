@@ -66,6 +66,34 @@ Ardından reklam seti `destination_type=ON_AD`,
 olarak güncellenir; kreatiflerin eylem düğmesi
 `{"type":"SIGN_UP","value":{"lead_gen_form_id":...}}` ile forma bağlanır.
 
+## Durum — 24 Ağustos 2026
+
+İki kampanya paralel yürüyecek, aynı kreatiflerle, farklı hedefle:
+
+| Kampanya | ID | Hedef | Günlük bütçe | Durum |
+|---|---|---|---|---|
+| `MV8 \| Lead \| Eşik \| TR` | 120253029646810721 | Web sitesi | TL 1.040 | ACTIVE |
+| `MV8 \| Lead \| Anlık Form \| TR` | 120253082188570721 | Anlık form | TL 1.040 | PAUSED — kurulum yarım |
+
+Kampanya kabuğu oluşturuldu; reklam seti ve kreatifler aşağıdaki iki
+engel kalkmadan kurulamıyor.
+
+## Engeller — ikisi de kullanıcı tarafında
+
+**1. Lead Ads Şartları kabul edilmemiş.** Reklam seti oluşturulurken
+Meta şunu döndürüyor:
+
+> Facebook Sayfanız Facebook'un Potansiyel Müşteri Bulma Hizmet
+> Koşulları'nı kabul edene dek potansiyel müşteri reklamları
+> yayınlayamazsınız.
+
+Kabul yeri: Sayfa → Yayınlama araçları → Anlık Formlar (ya da Ads
+Manager'da potansiyel müşteri reklamı kurarken çıkan bağlantı).
+Bir kez kabul edilir.
+
+**2. Token izinleri eksik.** Anlık form oluşturmak `pages_manage_ads`
+istiyor; mevcut token'da yok.
+
 ## Gereken izinler
 
 Mevcut system user token'ında yok:
