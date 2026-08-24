@@ -74,7 +74,7 @@ metinlerle, farklı hedefle:
 | Kampanya | ID | Hedef | Günlük bütçe | Durum |
 |---|---|---|---|---|
 | `MV8 \| Lead \| Eşik \| TR` | 120253029646810721 | Web sitesi | TL 1.040 | ACTIVE |
-| `MV8 \| Lead \| Anlık Form \| TR` | 120253082188570721 | Anlık form | TL 1.040 | PAUSED — yayına alma kararı bekliyor |
+| `MV8 \| Lead \| Anlık Form \| TR` | 120253082188570721 | Anlık form | TL 1.040 | ACTIVE — 24 Ağustos 2026 yayına alındı |
 
 Anlık form kampanyasının nesneleri:
 

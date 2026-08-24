@@ -69,7 +69,7 @@ Daire odaklı ilk üç reklam (Esik-1, Kira-1, Proje-1) ve bölünmüş-panel g�
 
 Görsel dili v2 ile değişti: tam kanvas fotoğraf, alttan koyu degrade, üstte marka + "TESLİM · ARALIK 2026" rozeti, fotoğraf üzerinde büyük serif başlık + italik vurgu satırı (Instagram'daki organik gönderiyle aynı dil). Başlıklar konuyu bilmeyen birine kendini anlatacak şekilde kuruldu: her başlıkta Atina/Yunanistan + 250.000 € + oturum izni birlikte geçiyor; izin daima "başvuru" olarak ifade ediliyor, alıcıya verilen bir şey olarak değil.
 
-## Kampanya 2 — Meta anlık form (duraklatılmış)
+## Kampanya 2 — Meta anlık form (yayında)
 
 Aynı görseller ve aynı bütçeyle kurulan ikinci kampanya; fark, formun
 Instagram'dan çıkmadan doldurulması. Amaç, site formuyla anlık formun
@@ -83,6 +83,9 @@ maliyet ve kalite açısından yan yana ölçülmesi.
 | Reklam · GV-Esik-Form | 120253082720560721 | kreatif 1047177771499373 |
 | Reklam · GV-Aile-Form | 120253082720910721 | kreatif 2069726403657850 |
 | Reklam · GV-Sure-Form | 120253082721090721 | kreatif 2179145626275916 |
+
+**24 Ağustos 2026** — kampanya, reklam seti ve üç reklam yayına alındı.
+İki kampanya birlikte günlük **TL 2.080** harcıyor.
 
 Hedefleme, yerleşimler, yaş aralığı ve teklif stratejisi kampanya 1 ile
 birebir aynı. **Tek fark yerleşim biçimi:** anlık form kreatifleri yalnızca
