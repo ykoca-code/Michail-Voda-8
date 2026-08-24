@@ -411,11 +411,6 @@ fbq('track', 'PageView');
 
 <script>
 (function () {
-  // WhatsApp tıklamaları
-  document.querySelectorAll('[data-wa]').forEach(function (el) {
-    el.addEventListener('click', function () { window.mv8Track('WhatsAppTiklama'); });
-  });
-
   // ── Form popup ──
   var modal = document.getElementById('leadModal');
   document.querySelectorAll('[data-open-form]').forEach(function (el) {
