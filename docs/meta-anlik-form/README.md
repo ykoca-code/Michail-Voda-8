@@ -64,7 +64,7 @@ curl -s -X POST "https://graph.facebook.com/v21.0/1346122758575388/leadgen_forms
 Ardından reklam seti `destination_type=ON_AD`,
 `optimization_goal=LEAD_GENERATION`, `promoted_object={"page_id":...}`
 olarak güncellenir; kreatiflerin eylem düğmesi
-`{"type":"SIGN_UP","value":{"lead_gen_form_id":...}}` ile forma bağlanır.
+`{"type":"LEARN_MORE","value":{"lead_gen_form_id":...}}` ile forma bağlanır.
 
 ## Durum — 24 Ağustos 2026
 
@@ -82,9 +82,9 @@ Anlık form kampanyasının nesneleri:
 |---|---|
 | Reklam seti `TR \| 33-65 \| Anlik Form` | 120253082660880721 |
 | Anlık form `MV8 Yatirimci Rehberi` | 2476659816095280 |
-| Reklam `GV-Esik-Form` / kreatif | 120253082720560721 / 1047177771499373 |
-| Reklam `GV-Aile-Form` / kreatif | 120253082720910721 / 2069726403657850 |
-| Reklam `GV-Sure-Form` / kreatif | 120253082721090721 / 2179145626275916 |
+| Reklam `GV-Esik-Form` / kreatif | 120253082720560721 / 28366053936359503 |
+| Reklam `GV-Aile-Form` / kreatif | 120253082720910721 / 2158671444994411 |
+| Reklam `GV-Sure-Form` / kreatif | 120253082721090721 / 27277546111920423 |
 
 Önceki iki engel (Lead Ads Şartları, token izinleri) kullanıcı tarafında
 giderildi.
