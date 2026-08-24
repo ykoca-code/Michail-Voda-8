@@ -68,38 +68,35 @@ olarak güncellenir; kreatiflerin eylem düğmesi
 
 ## Durum — 24 Ağustos 2026
 
-İki kampanya paralel yürüyecek, aynı kreatiflerle, farklı hedefle:
+Kurulum tamamlandı. İki kampanya paralel yürüyecek, aynı görsel ve
+metinlerle, farklı hedefle:
 
 | Kampanya | ID | Hedef | Günlük bütçe | Durum |
 |---|---|---|---|---|
 | `MV8 \| Lead \| Eşik \| TR` | 120253029646810721 | Web sitesi | TL 1.040 | ACTIVE |
-| `MV8 \| Lead \| Anlık Form \| TR` | 120253082188570721 | Anlık form | TL 1.040 | PAUSED — kurulum yarım |
+| `MV8 \| Lead \| Anlık Form \| TR` | 120253082188570721 | Anlık form | TL 1.040 | PAUSED — yayına alma kararı bekliyor |
 
-Kampanya kabuğu oluşturuldu; reklam seti ve kreatifler aşağıdaki iki
-engel kalkmadan kurulamıyor.
+Anlık form kampanyasının nesneleri:
 
-## Engeller — ikisi de kullanıcı tarafında
+| Nesne | ID |
+|---|---|
+| Reklam seti `TR \| 33-65 \| Anlik Form` | 120253082660880721 |
+| Anlık form `MV8 Yatirimci Rehberi` | 2476659816095280 |
+| Reklam `GV-Esik-Form` / kreatif | 120253082720560721 / 1047177771499373 |
+| Reklam `GV-Aile-Form` / kreatif | 120253082720910721 / 2069726403657850 |
+| Reklam `GV-Sure-Form` / kreatif | 120253082721090721 / 2179145626275916 |
 
-**1. Lead Ads Şartları kabul edilmemiş.** Reklam seti oluşturulurken
-Meta şunu döndürüyor:
+Önceki iki engel (Lead Ads Şartları, token izinleri) kullanıcı tarafında
+giderildi.
 
-> Facebook Sayfanız Facebook'un Potansiyel Müşteri Bulma Hizmet
-> Koşulları'nı kabul edene dek potansiyel müşteri reklamları
-> yayınlayamazsınız.
+## Ölçüm karşılaştırılırken dikkat
 
-Kabul yeri: Sayfa → Yayınlama araçları → Anlık Formlar (ya da Ads
-Manager'da potansiyel müşteri reklamı kurarken çıkan bağlantı).
-Bir kez kabul edilir.
+Kampanya 1 kreatifleri `asset_feed_spec` ile yerleşime göre görsel
+değiştiriyor (akış 4:5, story/reels 9:16). Anlık form kreatiflerinde bu
+mümkün değil — Meta `asset_feed_spec` altında lead formunu kabul etmiyor —
+bu yüzden üçü de yalnızca 4:5 görseli kullanıyor. İki kampanyanın
+maliyetleri kıyaslanırken tek fark "site mi anlık form mu" değil, aynı
+zamanda story/reels'teki görsel biçimidir.
 
-**2. Token izinleri eksik.** Anlık form oluşturmak `pages_manage_ads`
-istiyor; mevcut token'da yok.
-
-## Gereken izinler
-
-Mevcut system user token'ında yok:
-
-- `pages_manage_ads` — anlık form oluşturmak için **zorunlu**
-- `leads_retrieval` — lead'leri API'den çekmek için (raporlama)
-- `pages_show_list` — sayfa listesine erişim
-
-Ayrıca Ads Manager'da **Lead Ads Şartları** bir kez kabul edilmeli.
+Anlık form kampanyasında piksel `Lead` olayı tetiklenmez; dönüşümler
+yalnızca Meta raporlarında ve `/{form_id}/leads` uç noktasında görünür.
