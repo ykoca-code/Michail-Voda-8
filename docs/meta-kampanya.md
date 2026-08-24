@@ -80,12 +80,18 @@ maliyet ve kalite açısından yan yana ölçülmesi.
 | Kampanya | 120253082188570721 | `MV8 \| Lead \| Anlık Form \| TR` · OUTCOME_LEADS |
 | Reklam seti | 120253082660880721 | `TR \| 33-65 \| Anlik Form` · **günlük TL 1.040** · `destination_type=ON_AD` · `optimization_goal=LEAD_GENERATION` · `promoted_object={page_id}` |
 | Anlık form | 2476659816095280 | `MV8 Yatirimci Rehberi` — içerik `docs/meta-anlik-form/` |
-| Reklam · GV-Esik-Form | 120253082720560721 | kreatif 1047177771499373 |
-| Reklam · GV-Aile-Form | 120253082720910721 | kreatif 2069726403657850 |
-| Reklam · GV-Sure-Form | 120253082721090721 | kreatif 2179145626275916 |
+| Reklam · GV-Esik-Form | 120253082720560721 | kreatif 28366053936359503 |
+| Reklam · GV-Aile-Form | 120253082720910721 | kreatif 2158671444994411 |
+| Reklam · GV-Sure-Form | 120253082721090721 | kreatif 27277546111920423 |
 
 **24 Ağustos 2026** — kampanya, reklam seti ve üç reklam yayına alındı.
 İki kampanya birlikte günlük **TL 2.080** harcıyor.
+
+Aynı gün eylem düğmesi `SIGN_UP` ("Kaydol") yerine `LEARN_MORE` ("Daha Fazla
+Bilgi Edinin") olarak değiştirildi — "kaydol" bir üyelik izlenimi veriyordu ve
+site kampanyasının düğmesiyle de uyuşmuyordu. Düğme kreatifin parçası olduğu
+için üç kreatif yeniden oluşturulup reklamlara bağlandı; eski kreatifler
+(1047177771499373, 2069726403657850, 2179145626275916) kullanılmıyor.
 
 Hedefleme, yerleşimler, yaş aralığı ve teklif stratejisi kampanya 1 ile
 birebir aynı. **Tek fark yerleşim biçimi:** anlık form kreatifleri yalnızca
@@ -94,7 +100,8 @@ story/reels'te 9:16 görsele geçiyor. Karşılaştırma yorumlanırken bu fark
 akılda tutulmalı.
 
 Kreatifler klasik `object_story_spec.link_data` yapısında; harekete geçirici
-mesaj `SIGN_UP` ve `value.lead_gen_form_id` ile forma bağlı, `link` alanı
+mesaj `LEARN_MORE` ("Daha Fazla Bilgi Edinin") ve `value.lead_gen_form_id`
+ile forma bağlı, `link` alanı
 zorunlu olduğu için `http://fb.me/` verildi (kullanıcı bu bağlantıya gitmez,
 form reklamın içinde açılır).
 
