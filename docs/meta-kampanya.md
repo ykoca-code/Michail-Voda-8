@@ -28,12 +28,12 @@ kampanya kurulabiliyor, bütçe değiştirilebiliyor, rapor alınabiliyor.
 | Piksel | 1564731061789182 · MV8 Web Pixel |
 | Minimum günlük bütçe | TL 47,88 (hesap tarafından dayatılan taban) |
 
-## Yayındaki kampanya
+## Kampanya 1 — web sitesi (yayında)
 
 | Katman | ID | Ayar |
 |---|---|---|
 | Kampanya | 120253029646810721 | `MV8 \| Lead \| Eşik \| TR` · OUTCOME_LEADS · özel kategori beyan edilmedi |
-| Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · **günlük TL 800** |
+| Reklam seti | 120253029682550721 | `TR \| 33-65 \| Yatırım-Gayrimenkul` · **günlük TL 1.040** |
 | Reklam · GV-Esik-v2 | 120253030488610721 | kreatif 1610829687225588 |
 | Reklam · GV-Aile-v3 | 120253030620170721 | kreatif 1079343091275876 |
 | Reklam · GV-Sure-v3 | 120253030621160721 | kreatif 1370897995256181 |
@@ -69,6 +69,41 @@ Daire odaklı ilk üç reklam (Esik-1, Kira-1, Proje-1) ve bölünmüş-panel g�
 
 Görsel dili v2 ile değişti: tam kanvas fotoğraf, alttan koyu degrade, üstte marka + "TESLİM · ARALIK 2026" rozeti, fotoğraf üzerinde büyük serif başlık + italik vurgu satırı (Instagram'daki organik gönderiyle aynı dil). Başlıklar konuyu bilmeyen birine kendini anlatacak şekilde kuruldu: her başlıkta Atina/Yunanistan + 250.000 € + oturum izni birlikte geçiyor; izin daima "başvuru" olarak ifade ediliyor, alıcıya verilen bir şey olarak değil.
 
+## Kampanya 2 — Meta anlık form (duraklatılmış)
+
+Aynı görseller ve aynı bütçeyle kurulan ikinci kampanya; fark, formun
+Instagram'dan çıkmadan doldurulması. Amaç, site formuyla anlık formun
+maliyet ve kalite açısından yan yana ölçülmesi.
+
+| Katman | ID | Ayar |
+|---|---|---|
+| Kampanya | 120253082188570721 | `MV8 \| Lead \| Anlık Form \| TR` · OUTCOME_LEADS |
+| Reklam seti | 120253082660880721 | `TR \| 33-65 \| Anlik Form` · **günlük TL 1.040** · `destination_type=ON_AD` · `optimization_goal=LEAD_GENERATION` · `promoted_object={page_id}` |
+| Anlık form | 2476659816095280 | `MV8 Yatirimci Rehberi` — içerik `docs/meta-anlik-form/` |
+| Reklam · GV-Esik-Form | 120253082720560721 | kreatif 1047177771499373 |
+| Reklam · GV-Aile-Form | 120253082720910721 | kreatif 2069726403657850 |
+| Reklam · GV-Sure-Form | 120253082721090721 | kreatif 2179145626275916 |
+
+Hedefleme, yerleşimler, yaş aralığı ve teklif stratejisi kampanya 1 ile
+birebir aynı. **Tek fark yerleşim biçimi:** anlık form kreatifleri yalnızca
+4:5 görseli kullanıyor (aşağıdaki API notuna bakınız), kampanya 1 ise
+story/reels'te 9:16 görsele geçiyor. Karşılaştırma yorumlanırken bu fark
+akılda tutulmalı.
+
+Kreatifler klasik `object_story_spec.link_data` yapısında; harekete geçirici
+mesaj `SIGN_UP` ve `value.lead_gen_form_id` ile forma bağlı, `link` alanı
+zorunlu olduğu için `http://fb.me/` verildi (kullanıcı bu bağlantıya gitmez,
+form reklamın içinde açılır).
+
+Form kalifikasyon soruları site formuyla aynı: ad soyad, telefon, e-posta +
+"başvuruya kaç kişi dahil olacak" ve "ne zaman başvurmayı düşünüyorsunuz".
+Teşekkür ekranındaki buton yatırımcı rehberi PDF'ine gidiyor.
+
+Gelen kayıtlar Meta tarafında tutulur; `leads_retrieval` izniyle
+`/{form_id}/leads` uç noktasından okunabilir. Site kampanyasının aksine
+piksel `Lead` olayı **tetiklenmez** — bu kampanyanın dönüşümleri yalnızca
+Meta raporlarında görünür.
+
 ## API notları (tekrar takılmamak için)
 
 - Kampanya oluştururken `is_adset_budget_sharing_enabled` **zorunlu**.
@@ -78,6 +113,14 @@ Görsel dili v2 ile değişti: tam kanvas fotoğraf, alttan koyu degrade, üstte
   tek tek kapatılıyor (`text_optimizations`, `image_touchups`,
   `image_brightness_and_contrast`).
 - Uygulama **Live** modda olmalı; geliştirme modunda kreatif oluşturulamıyor.
+- Anlık form kreatiflerinde `asset_feed_spec` **kullanılamaz**:
+  `onsite_destinations` altında ne `lead_gen_form_id` ne de `link_urls`
+  kabul ediliyor. Bu yüzden yerleşime göre 4:5/9:16 değiştirme özelliği
+  anlık form kampanyasında yok; klasik `object_story_spec` ile tek görsel
+  kullanılıyor.
+- Anlık form oluşturmak için token'da `pages_manage_ads`, okumak için
+  `leads_retrieval` izni gerekir; ayrıca sayfa için Lead Ads şartları
+  kabul edilmiş olmalı (`facebook.com/ads/leadgen/tos?page_id=...`).
 - Token'da `instagram_basic` izni yok — sayfanın Instagram alanı okunamıyor.
   Bağlantının varlığı kreatifteki `instagram_user_id` alanından doğrulanır.
 
