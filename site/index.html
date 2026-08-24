@@ -43,7 +43,7 @@ fbq('track', 'PageView');
       <li><a href="#guvence">Güvence</a></li>
       <li><a href="#konum">Konum</a></li>
       <li><a href="#sss">Sık Sorulanlar</a></li>
-      <li><a class="nav-cta" href="basvuru.html" data-open-form>Ücretsiz Görüşme</a></li>
+      <li><a class="nav-cta pulse" href="basvuru.html" data-open-form>Ücretsiz Rehber</a></li>
     </ul>
   </div>
 </nav>
@@ -57,7 +57,7 @@ fbq('track', 'PageView');
       <h1>Atina'nın merkezinde yepyeni bir daire, ailenizin tamamına <em>5 yıllık oturum izni</em></h1>
       <p class="lead">Atina'da Golden Visa için asgari yatırım 800.000 €'ya yükseldi. Michail Voda 8 ise ofisten konuta dönüşüm projesi olduğu için yasadaki istisna kapsamında: bu binada eşik hâlâ 250.000 €. Üstelik Golden Visa başvurunuz için teslimi beklemezsiniz: satın alma tamamlandığında başvuru süreci başlar. Tapudan oturum kartına kadar bütün işlemleri Atina'daki ekibimiz sizin adınıza yürütüyor.</p>
       <div class="cta-row">
-        <button class="btn btn-primary" type="button" data-open-form>Ücretsiz ön görüşme</button>
+        <button class="btn btn-primary" type="button" data-open-form>Yatırımcı rehberini indirin</button>
         <a class="btn btn-light" href="#proje">Projeyi inceleyin</a>
       </div>
     </div>
@@ -399,7 +399,7 @@ fbq('track', 'PageView');
     <button class="modal-close" type="button" aria-label="Kapat" data-close-form>×</button>
     <span class="form-badge">Ücretsiz Rehber</span>
     <h3 id="leadTitle">Rehberi gönderelim</h3>
-    <p class="sub">Formu bırakın; 9 sayfalık yatırımcı rehberi hemen açılsın. Ekibimiz de 24 saat içinde arayıp güncel fiyat listesini iletsin.</p>
+    <p class="sub">Formu doldurun; Yatırımcı rehberini indirin ve ekibimiz de anında iletişime geçsin.</p>
     <form class="lead-form" action="#" method="POST">
       <input type="hidden" name="_subject" value="MV8 web sitesi — ön görüşme talebi">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
@@ -420,7 +420,7 @@ fbq('track', 'PageView');
         <input type="checkbox" id="m-kvkk" required>
         <label for="m-kvkk">Kişisel verilerimin <a href="kvkk.html" target="_blank" rel="noopener">Aydınlatma Metni</a> kapsamında işlenmesine ve tarafıma ulaşılmasına izin veriyorum.</label>
       </div>
-      <button class="btn btn-primary" type="submit">Görüşme talebi gönder</button>
+      <button class="btn btn-primary" type="submit">Gönder</button>
       <p class="form-alt">veya <a href="https://wa.me/905365696896" rel="noopener" data-wa>WhatsApp'tan yazın</a></p>
     </form>
   </div>
@@ -433,14 +433,35 @@ fbq('track', 'PageView');
   document.querySelectorAll('[data-open-form]').forEach(function (el) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
-      modal.classList.add('open');
-      document.body.classList.add('modal-open');
-      window.mv8Track('FormAcildi', { content_name: 'On gorusme formu' });
-      var first = modal.querySelector('input[name="ad_soyad"]');
-      if (first) setTimeout(function () { first.focus(); }, 50);
+      openModal('Butona tiklama');
     });
   });
-  function closeModal() { modal.classList.remove('open'); document.body.classList.remove('modal-open'); }
+  function openModal(kaynak) {
+    if (modal.classList.contains('open')) return;
+    modal.classList.add('open');
+    document.body.classList.add('modal-open');
+    window.mv8Track('FormAcildi', { content_name: kaynak });
+    var first = modal.querySelector('input[name="ad_soyad"]');
+    if (first) setTimeout(function () { first.focus(); }, 50);
+  }
+
+  /* 15 saniye sonra kendiliğinden açılır — oturum başına bir kez.
+     Ziyaretçi formu daha önce açtıysa ya da kapattıysa tekrar açılmaz. */
+  var ANAHTAR = 'mv8_form_gosterildi';
+  function gosterildiMi() { try { return sessionStorage.getItem(ANAHTAR) === '1'; } catch (e) { return false; } }
+  function isaretle() { try { sessionStorage.setItem(ANAHTAR, '1'); } catch (e) {} }
+  if (!gosterildiMi()) {
+    var zamanlayici = setTimeout(function () {
+      if (gosterildiMi()) return;
+      isaretle();
+      openModal('Otomatik acilis');
+    }, 15000);
+    document.addEventListener('click', function iptal(e) {
+      if (e.target.closest('[data-open-form]')) { clearTimeout(zamanlayici); isaretle(); document.removeEventListener('click', iptal); }
+    });
+  }
+
+  function closeModal() { modal.classList.remove('open'); document.body.classList.remove('modal-open'); isaretle(); }
   document.querySelectorAll('[data-close-form]').forEach(function (el) { el.addEventListener('click', closeModal); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
