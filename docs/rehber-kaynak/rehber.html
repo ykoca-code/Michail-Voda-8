@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><title>Yunanistan Golden Visa Rehberi</title>
+<style>
+@font-face{font-family:Fr;src:url(fonts/FRAUNCES.ttf) format('truetype');font-weight:500}
+@font-face{font-family:FrI;src:url(fonts/FRAUNCES-ITALIC.ttf) format('truetype')}
+@font-face{font-family:In;src:url(fonts/INSTRUMENT.ttf) format('truetype')}
+
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#241C17; --bg:#F5F0EA; --acc:#9E3B2B; --rose:#E8AE93;
+  --soft:#6E6055; --hair:#D8CBBF; --ok:#3D5941;
+}
+body{font-family:In,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;page-break-after:always;position:relative;overflow:hidden;background:var(--bg)}
+.page:last-child{page-break-after:auto}
+.pad{padding:20mm 18mm}
+
+/* --- kapak --- */
+.cover{background:var(--ink);color:var(--bg)}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
+.cover .veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(36,28,23,.55) 0%,rgba(36,28,23,.25) 45%,rgba(36,28,23,.96) 100%)}
+.cover .c{position:relative;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:20mm 18mm}
+.cover h1{font-family:Fr,serif;font-size:34pt;line-height:1.08;letter-spacing:-.01em;max-width:150mm}
+.cover h1 em{font-family:FrI,serif;font-style:normal;color:var(--rose)}
+.cover .kick{font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--rose)}
+.cover .sub{font-size:11pt;line-height:1.55;color:#D9CEC5;max-width:120mm;margin-top:7mm}
+.cover .foot{font-size:8.5pt;letter-spacing:.1em;color:#B7A899;display:flex;justify-content:space-between}
+.wm{font-family:Fr,serif;font-size:15pt}
+.wm i{font-family:FrI,serif;font-style:normal;color:var(--rose)}
+
+/* --- iç sayfa --- */
+.hd{display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:1px solid var(--hair);padding-bottom:4mm;margin-bottom:9mm}
+.hd .n{font-size:8pt;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.hd .b{font-size:8pt;letter-spacing:.1em;color:var(--soft)}
+h2{font-family:Fr,serif;font-size:21pt;line-height:1.15;letter-spacing:-.01em;margin-bottom:5mm}
+h2 em{font-family:FrI,serif;font-style:normal;color:var(--acc)}
+h3{font-size:11pt;font-weight:600;margin:6mm 0 2mm}
+p{font-size:10pt;line-height:1.6;margin-bottom:3.5mm;max-width:160mm}
+.lead{font-size:11.5pt;line-height:1.55;color:var(--soft);margin-bottom:7mm}
+strong{font-weight:600}
+.pn{position:absolute;bottom:12mm;right:18mm;font-size:8pt;color:var(--soft)}
+
+/* tablolar */
+table{width:100%;border-collapse:collapse;margin:4mm 0 5mm}
+th,td{text-align:left;padding:3.2mm 2mm;border-bottom:1px solid var(--hair);font-size:9.5pt;vertical-align:top}
+th{font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hi td{background:#EFE4DC;font-weight:600;color:var(--acc)}
+tr.pos td{color:var(--ok)}
+td small{display:block;color:var(--soft);font-size:8pt;margin-top:.8mm}
+
+/* kutular */
+.box{background:#EFE9E2;border-left:3px solid var(--acc);padding:5mm 6mm;margin:5mm 0}
+.box p:last-child{margin-bottom:0}
+.box.dark{background:var(--ink);color:#EDE3DA;border-left-color:var(--rose)}
+.box.dark strong{color:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.card{border:1px solid var(--hair);padding:4.5mm 5mm}
+.card .t{font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:1.5mm}
+.card b{font-family:Fr,serif;font-size:12pt;display:block;margin-bottom:1.5mm}
+.card p{font-size:9pt;line-height:1.5;margin:0;color:var(--soft)}
+
+ol.steps{list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-left:12mm;margin-bottom:5mm}
+ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:.5mm;
+  font-family:Fr,serif;font-size:14pt;color:var(--acc)}
+ol.steps b{display:block;font-size:11pt;margin-bottom:1mm}
+ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
+
+.qa{border-bottom:1px solid var(--hair);padding:3.5mm 0}
+.qa:last-child{border-bottom:0}
+.qa .q{font-weight:600;font-size:10pt;margin-bottom:1.5mm}
+.qa .a{font-size:9.5pt;line-height:1.55;color:var(--soft);margin:0}
+
+.pic{width:100%;height:62mm;object-fit:cover;margin:5mm 0}
+.fine{font-size:8pt;color:var(--soft);line-height:1.5}
+
+/* son sayfa */
+.end{background:var(--ink);color:var(--bg)}
+.end h2{color:var(--bg)}
+.end .lead{color:#C9BCB1}
+.end .ct{border:1px solid #4A3B31;padding:6mm;margin-bottom:4mm}
+.end .ct .t{font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);margin-bottom:2mm}
+.end .ct b{font-family:Fr,serif;font-size:14pt}
+.end .fine{color:#9C8B7D}
+</style></head><body>
+
+<!-- 1 KAPAK -->
+<section class="page cover">
+  <img src="assets/cephe-1.jpg" alt="">
+  <div class="veil"></div>
+  <div class="c">
+    <div class="wm">Michail Voda <i>8</i></div>
+    <div>
+      <div class="kick">Yatırımcı Rehberi · 2026</div>
+      <h1 style="margin-top:5mm">Yunanistan'da<br>yatırım yoluyla<br><em>oturum izni</em></h1>
+      <p class="sub">Atina'nın merkezinde 250.000 € eşiği nasıl mümkün oluyor, süreç nasıl işliyor, toplam maliyet ne kadar? Karar vermeden önce bilmeniz gereken her şey.</p>
+    </div>
+    <div class="foot"><span>MICHAILVODA8.COM</span><span>8 MICHAIL VODA SK. · 104 39 ATİNA</span></div>
+  </div>
+</section>
+
+<!-- 2 PROGRAM -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">01 — Program</span><span class="b">Michail Voda 8</span></div>
+  <h2>Eşik neden <em>250.000 €?</em></h2>
+  <p class="lead">Yunanistan'ın yatırım yoluyla oturum izni programında asgari tutar bölgeye göre değişiyor. Bir istisna, konumdan bağımsız olarak en düşük eşiği koruyor.</p>
+
+  <table>
+    <tr><th>Yatırım türü</th><th style="text-align:right">Asgari tutar</th></tr>
+    <tr><td>Atina, Selanik, Miykonos, Santorini ve nüfusu yüksek adalarda konut<small>Yoğun talep gören bölgeler</small></td><td class="num">800.000 €</td></tr>
+    <tr><td>Yunanistan'ın diğer bölgelerinde konut</td><td class="num">400.000 €</td></tr>
+    <tr class="hi"><td>Ticari binadan konuta dönüşüm veya tarihi yapı restorasyonu<small>Konum şartı aranmaz</small></td><td class="num">250.000 €</td></tr>
+  </table>
+
+  <div class="box">
+    <p><strong>Bu ayrımın pratik anlamı:</strong> 250.000 € bütçeyle normal konut alımı yapan bir yatırımcı, Atina'da programa giremez; şehrin çeperindeki ilçelere ya da başka şehirlere yönelmek zorunda kalır. Dönüşüm istisnası konum şartı getirmediği için aynı bütçeyle şehrin tam merkezinde daire sahibi olunabilir.</p>
+  </div>
+
+  <h3>Michail Voda 8 bu istisna kapsamında</h3>
+  <p>Atina merkezinde, Michail Voda ile Makedonias sokaklarının köşesindeki bir ofis binası, Gavalas·Ioannidou Architecture imzasıyla 30 daireli bir konut binasına dönüştürülüyor. Binanın konuta dönüşümü hukuken tamamlanmış durumda.</p>
+
+  <img class="pic" src="assets/sokak.jpg" alt="">
+  <p class="fine">Bilgiler Ağustos 2026 itibarıyla geçerlidir. Mevzuat değişebilir; güncel durum için hukuk büromuzdan teyit alınız.</p>
+  <div class="pn">2</div>
+</div></section>
+
+<!-- 3 İZİN -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">02 — Oturum İzni</span><span class="b">Michail Voda 8</span></div>
+  <h2>İzin size <em>ne veriyor?</em></h2>
+
+  <div class="grid2">
+    <div class="card"><div class="t">Süre</div><b>5 yıl, yenilenebilir</b><p>Yatırımınızı elinizde tuttuğunuz sürece izin yenilenir. Yenilemede yeni bir yatırım şartı yoktur.</p></div>
+    <div class="card"><div class="t">İkamet</div><b>Kalma zorunluluğu yok</b><p>Yunanistan'da yaşamak zorunda değilsiniz. Yılda bir gün bile kalmadan izniniz geçerliliğini korur.</p></div>
+    <div class="card"><div class="t">Seyahat</div><b>Schengen'de serbest</b><p>27 ülkelik Schengen bölgesinde her 180 günde 90 güne kadar vizesiz seyahat edebilirsiniz.</p></div>
+    <div class="card"><div class="t">Çalışma</div><b>Şirket kurabilirsiniz</b><p>Ücretli çalışma hakkı vermez; ancak Yunanistan'da şirket kurabilir, ortak olabilir, temettü alabilirsiniz.</p></div>
+  </div>
+
+  <h3>Başvuruya kimler dahil edilebilir</h3>
+  <table>
+    <tr><th>Kişi</th><th>Koşul</th></tr>
+    <tr><td>Eş</td><td>Yaş sınırı yok</td></tr>
+    <tr><td>Çocuklar</td><td>21 yaşından küçük</td></tr>
+    <tr><td>Başvuranın anne-babası</td><td>Yaş sınırı yok</td></tr>
+    <tr><td>Eşin anne-babası</td><td>Yaş sınırı yok</td></tr>
+  </table>
+  <p>Tek yatırımla üç kuşak aynı başvuruya dahil edilebiliyor. Dört kişilik bir aile, iki taraf ebeveynle birlikte sekiz kişiye kadar çıkabilir.</p>
+
+  <div class="box">
+    <p><strong>Vatandaşlık ayrı bir süreçtir.</strong> Bu program oturum izni verir. Yunan vatandaşlığı için ülkede fiilen yedi yıl ikamet etmek, B1 seviyesinde Yunanca bilmek ve entegrasyon sınavını geçmek gerekir. Oturum izni bu sürecin ön koşulunu sağlar, ancak otomatik bir hak doğurmaz.</p>
+  </div>
+  <div class="pn">3</div>
+</div></section>
+
+<!-- 4 YATIRIM -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">03 — Yatırım</span><span class="b">Michail Voda 8</span></div>
+  <h2>Toplam maliyet <em>tek tabloda</em></h2>
+  <p class="lead">Ayırmanız gereken bütçe ve karşılığında elinize geçenler. Gizli kalem yok.</p>
+
+  <table>
+    <tr><th>Kalem</th><th style="text-align:right">Tutar</th></tr>
+    <tr><td>Daire bedeli<small>Sabit fiyat</small></td><td class="num">250.000 €</td></tr>
+    <tr><td>Satın alım vergisi<small>Devlete ödenir</small></td><td class="num">7.725 €</td></tr>
+    <tr class="hi"><td>Ayırmanız gereken toplam bütçe</td><td class="num">257.725 €</td></tr>
+    <tr class="pos"><td>Avukatlık, noter, tapu ve kadastro tescili, sağlık sigortası<small>Dört kişilik aile için yaklaşık 13.500 € · satıcı karşılar</small></td><td class="num">+ 12.000 – 15.000 €</td></tr>
+    <tr class="pos"><td>5 yıllık kira geliriniz<small>Aylık 500 € · teslimden itibaren · hesabınıza yatırılır</small></td><td class="num">+ 30.000 €</td></tr>
+  </table>
+
+  <div class="box">
+    <p><strong>Karşılaştırırken dikkat edin:</strong> Piyasadaki çoğu teklif yalnızca daire bedelini gösterir; avukatlık, noter ve tescil masrafları sonradan alıcıya fatura edilir. Bu rehberdeki 257.725 € rakamı, cebinizden çıkacak toplam tutardır.</p>
+  </div>
+
+  <h3>Kira garantisi</h3>
+  <p>Anahtar tesliminden itibaren beş yıl boyunca aylık 500 € kira, satış sözleşmesinde yazılı bir yükümlülük olarak taahhüt edilir. Kiracı bulma, boş kalma, tahsilat ve yönetim sorumluluğu size ait değildir.</p>
+  <p>Golden Visa kapsamındaki mülkler kısa dönem kiralamaya (Airbnb vb.) kapalıdır; beş yıllık uzun dönem garanti bu kısıtı zaten karşılar.</p>
+
+  <img class="pic" src="assets/ic-1.jpg" alt="">
+  <div class="pn">4</div>
+</div></section>
+
+<!-- 5 PROJE -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">04 — Proje</span><span class="b">Michail Voda 8</span></div>
+  <h2>Bina ve <em>daireler</em></h2>
+
+  <table>
+    <tr><td>Adres</td><td class="num">8 Michail Voda Sk., 104 39 Atina</td></tr>
+    <tr><td>Proje türü</td><td class="num">Ofisten konuta dönüşüm</td></tr>
+    <tr><td>Daire sayısı</td><td class="num">30 daire</td></tr>
+    <tr class="hi"><td>Müsait daire</td><td class="num">12 daire · 1., 2. ve 3. katlar</td></tr>
+    <tr><td>Büyüklük</td><td class="num">29 – 49 m²</td></tr>
+    <tr><td>Teslim</td><td class="num">Aralık 2026 · eşyalı</td></tr>
+    <tr><td>Mimari</td><td class="num">Gavalas·Ioannidou Architecture</td></tr>
+    <tr><td>Hukuk</td><td class="num">Ramadanoglou Politis Legal Group</td></tr>
+  </table>
+
+  <p>Zemin kattaki asma katlı daireler ile 4. ve 5. katlar satıldı. Seçim yapılabilecek 12 daire 1., 2. ve 3. katlarda bulunuyor. Tüm daireler mobilyalı olarak teslim edilir; anahtarı aldığınız gün kullanıma hazırdır.</p>
+
+  <img class="pic" src="assets/plan-tipik.jpg" alt="" style="height:80mm;object-fit:contain;background:#fff">
+  <p class="fine">Tipik kat planı. Güncel müsaitlik durumu için ön görüşme talep ediniz; daire bazında durum haftalık değişebilir.</p>
+  <div class="pn">5</div>
+</div></section>
+
+<!-- 6 SÜREÇ -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">05 — Süreç</span><span class="b">Michail Voda 8</span></div>
+  <h2>Türkiye'den ayrılmadan <em>dört adım</em></h2>
+  <p class="lead">İşlemlerin tamamı vekâletname ile uzaktan yürütülür. Atina'ya yalnızca parmak izi randevusu için bir kez gelirsiniz.</p>
+
+  <ol class="steps">
+    <li><b>Vekâletname</b><p>Pasaport, nüfus kayıt örneği ve ikametgâh belgenizle Türkiye'de noterde vekâletname çıkarır, kaymakamlıktan apostil onayı alırsınız.</p></li>
+    <li><b>Tapu</b><p>Yunanistan vergi numaranız alınır; taşınmazın hukuki durumu incelenir, noterde satış sözleşmesi imzalanır, tapu ve kadastro tescili tamamlanır.</p></li>
+    <li><b>Başvuru</b><p>Siz, eşiniz, 21 yaş altı çocuklarınız ve anne-babalarınız için başvuru dosyaları hazırlanır ve teslim edilir. Süreç, satın alma tamamlandığında başlar.</p></li>
+    <li><b>Oturum kartı</b><p>Randevunuzda parmak izi verilir; beş yıllık, yenilenebilir oturum kartlarınız düzenlenir.</p></li>
+  </ol>
+
+  <div class="box dark">
+    <p><strong>Tek muhatapla çalışırsınız.</strong> Satış sözleşmesi, avukat, vergi numarası, noter, tapu, parmak izi randevusu ve oturum kartı takibi — hepsini aynı ekip yürütür. Sürecin hangi aşamasında olduğunuzu her an sorabilirsiniz.</p>
+  </div>
+  <div class="pn">6</div>
+</div></section>
+
+<!-- 7 GÜVENCE -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">06 — Güvence</span><span class="b">Michail Voda 8</span></div>
+  <h2>Paranız <em>kime</em>, ne zaman geçiyor?</h2>
+  <p class="lead">Yurt dışına altı haneli bir tutar göndermek sürecin en tedirgin edici adımı. Akışı olduğu gibi yazıyoruz.</p>
+
+  <div class="grid2">
+    <div class="card"><div class="t">Ödeme</div><b>Para elden geçmez</b><p>Ödeme banka kanalıyla yapılır. Satıcıya nakit ya da şahsi hesaba transfer söz konusu değildir; her adım kayıt altındadır.</p></div>
+    <div class="card"><div class="t">Mülkiyet</div><b>Tapu sizin adınıza</b><p>Satış sözleşmesi noter huzurunda imzalanır, tescil doğrudan alıcı adına yapılır. Arada şirket ya da vekil mülkiyeti yoktur.</p></div>
+    <div class="card"><div class="t">Denetim</div><b>Bağımsız avukat hakkı</b><p>Sözleşmeyi imzalamadan önce kendi seçtiğiniz bir avukata inceletebilirsiniz. Avukatlık masrafı zaten satıcıya aittir.</p></div>
+    <div class="card"><div class="t">Taraflar</div><b>Kayıtlı ve doğrulanabilir</b><p>Bina gerçek ve kayıtlı bir adreste. Hukuki süreci Kolonaki'deki Ramadanoglou Politis Legal Group yürütür.</p></div>
+  </div>
+
+  <h3>Binayı yerinde görün</h3>
+  <p>Karar öncesinde Atina'ya gelip binayı, daireleri ve çevreyi kendi gözünüzle görmek isterseniz ziyaretinizi planlarız. Uzaktan karar vermek zorunda değilsiniz.</p>
+
+  <img class="pic" src="assets/avlu-2.jpg" alt="">
+  <div class="pn">7</div>
+</div></section>
+
+<!-- 8 SSS -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">07 — Sık Sorulanlar</span><span class="b">Michail Voda 8</span></div>
+  <h2>Aklınıza <em>takılanlar</em></h2>
+
+  <div class="qa"><div class="q">29 m² küçük değil mi?</div><p class="a">Daire, oturmak için değil programa girmek ve kira geliri elde etmek için alınıyor. Atina merkezde stüdyo daireler öğrenci ve genç profesyonel kiracıların en çok aradığı tip; beş yıllık kira garantisi de bu talebe dayanıyor. 49 m²'ye kadar seçenek mevcut, fiyat değişmiyor.</p></div>
+
+  <div class="qa"><div class="q">Bu fiyata Yunanistan'da daha büyük ev alınmaz mı?</div><p class="a">Alınır, ancak Atina merkezde değil; ve daha önemlisi normal bir konut alımı sizi programa sokmaz. Atina'da konut alımıyla programa girmek için eşik 800.000 €'dur.</p></div>
+
+  <div class="qa"><div class="q">Teslim Aralık 2026 — o zamana kadar beklemem mi gerekiyor?</div><p class="a">Binanın konuta dönüşümü hukuken tamamlandı. Oturum izni başvuru süreci, satın alma tamamlandığında başlar. Size özel takvim, hukuk büromuz tarafından netleştirilir.</p></div>
+
+  <div class="qa"><div class="q">Yunanistan'a gitmem gerekir mi?</div><p class="a">Asgari kalma zorunluluğu yoktur. Süreçte yalnızca biyometrik veri (parmak izi) randevusu için bir kez gelmeniz gerekir; kalan işlemler vekâletle yürütülür.</p></div>
+
+  <div class="qa"><div class="q">Daireyi sonradan satabilir miyim?</div><p class="a">Mülk sizindir, satabilirsiniz. Ancak satış hâlinde oturum izninin dayanağı ortadan kalkar ve izin yenilenmez.</p></div>
+
+  <div class="qa"><div class="q">Kira garantisini kim veriyor?</div><p class="a">Garanti, satış sözleşmesinin bir maddesidir; noter huzurunda imzalanan sözleşmeyle taahhüt edilir. Sözlü bir vaat değildir.</p></div>
+
+  <div class="qa"><div class="q">Airbnb yapabilir miyim?</div><p class="a">Hayır. Golden Visa kapsamındaki mülkler kısa dönem kiralamaya kapalıdır. Beş yıllık uzun dönem kira garantisi bu kısıtı zaten karşılar.</p></div>
+  <div class="pn">8</div>
+</div></section>
+
+<!-- 9 İLETİŞİM -->
+<section class="page end"><div class="pad">
+  <div class="hd" style="border-color:#4A3B31"><span class="n" style="color:var(--rose)">08 — İletişim</span><span class="b" style="color:#9C8B7D">Michail Voda 8</span></div>
+  <h2>Sorularınızı <em style="color:var(--rose)">konuşalım</em></h2>
+  <p class="lead">15 dakikalık bir görüşmede durumunuza özel takvimi, uygun daireleri ve toplam maliyeti birlikte netleştirelim.</p>
+
+  <div class="ct"><div class="t">WhatsApp</div><b>+90 536 569 68 96</b></div>
+  <div class="ct"><div class="t">Web</div><b>michailvoda8.com</b></div>
+  <div class="ct"><div class="t">E-posta</div><b>info@michailvoda8.com</b></div>
+  <div class="ct"><div class="t">Proje adresi</div><b>8 Michail Voda Sk., 104 39 Atina</b></div>
+
+  <div style="position:absolute;bottom:20mm;left:18mm;right:18mm">
+    <p class="fine" style="border-top:1px solid #4A3B31;padding-top:4mm">
+      Bu rehber bilgilendirme amaçlıdır; hukuki, mali veya yatırım tavsiyesi niteliği taşımaz. Oturum izni başvurularının sonucu Yunan resmi makamlarının takdirindedir. Mevzuat ve harç tutarları değişebilir. Türkiye'deki vergisel yükümlülükleriniz için mali müşavirinize danışmanızı öneririz. Rakamlar Ağustos 2026 itibarıyla geçerlidir.
+    </p>
+    <p class="fine" style="margin-top:3mm;color:#7E6E62">© 2026 Michail Voda 8 · michailvoda8.com</p>
+  </div>
+</div></section>
+
+</body></html>

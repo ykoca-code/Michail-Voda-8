@@ -41,10 +41,14 @@ fbq('track', 'PageView');
   <div class="wrap" style="max-width: 46rem;">
     <p class="sec-no" style="margin-bottom: 1.2rem;">Talebiniz Alındı</p>
     <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1;">Teşekkürler — <em>bilgi paketiniz yolda.</em></h1>
-    <p class="lead" style="margin-top: 1.4rem;">Talebiniz ekibimize ulaştı. Bundan sonra şunlar olacak:</p>
+    <p class="lead" style="margin-top: 1.4rem;">Talebiniz ekibimize ulaştı. Rehberi hemen indirebilirsiniz:</p>
+
+    <a class="btn btn-primary" href="/rehber/michail-voda-8-golden-visa-rehberi.pdf" download style="margin-bottom:2.2rem;" data-rehber>Yatırımcı rehberini indirin · PDF</a>
+
+    <p class="lead" style="margin-top: 0;">Bundan sonra şunlar olacak:</p>
     <ol class="steps" style="grid-template-columns: 1fr; gap: 1.4rem; margin-top: 2rem;">
       <li><h3>24 saat içinde arıyoruz</h3><p>Ekibimiz, bıraktığınız telefon numarasından size ulaşır.</p></li>
-      <li><h3>Bilgi paketini iletiyoruz</h3><p>Fiyat listesi, kat planları ve süreç dosyası e-postanıza gelir.</p></li>
+      <li><h3>Güncel fiyat listesini iletiyoruz</h3><p>Rehberde yer alan bilgilere ek olarak, müsait dairelerin güncel listesi ve kat planları e-postanıza gelir.</p></li>
       <li><h3>Ön görüşme planlıyoruz</h3><p>Dilerseniz 15 dakikalık kısa bir görüşmede tüm sorularınızı yanıtlarız.</p></li>
     </ol>
     <div class="cta-row" style="margin-top: 2.5rem;">
@@ -70,6 +74,9 @@ fbq('track', 'PageView');
 <script>
 // Dönüşüm: forma ulaşan her ziyaretçi bu sayfaya yönlenir
 window.mv8Track('Lead', { content_name: 'On gorusme talebi', content_category: 'Golden Visa' });
+document.querySelectorAll('[data-rehber]').forEach(function (el) {
+  el.addEventListener('click', function () { window.mv8Track('RehberIndirildi'); });
+});
 window.mv8Google('Lead');
 </script>
 
