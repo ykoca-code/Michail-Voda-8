@@ -134,6 +134,24 @@ Meta raporlarında görünür.
 - Token'da `instagram_basic` izni yok — sayfanın Instagram alanı okunamıyor.
   Bağlantının varlığı kreatifteki `instagram_user_id` alanından doğrulanır.
 
+## 26 Ağustos 2026 — zayıf kreatifler durduruldu
+
+`GV-Aile` ve `GV-Sure` iki gün boyunca her iki kampanyada da harcamanın
+%5'inden azını aldı (toplam ~300 gösterim, 2 tıklama, 0 lead) ve günde
+~TL 146 götürüyordu. Meta aynı reklam seti içinde bu kreatifleri seçmiyor.
+Dördü de kullanıcı onayıyla duraklatıldı:
+
+| Reklam | ID |
+|---|---|
+| GV-Aile-v3 (site) | 120253030620170721 |
+| GV-Sure-v3 (site) | 120253030621160721 |
+| GV-Aile-Form | 120253082720910721 |
+| GV-Sure-Form | 120253082721090721 |
+
+Her iki kampanyada da yalnızca **Esik** kreatifi yayında. Bu mesajlar
+gerçekten test edilmek istenirse doğru yol, kendi bütçesiyle ayrı bir
+reklam setine alınmalarıdır — aynı sette bırakmak test değil, bütçe sızıntısı.
+
 ## Çalışma kuralları
 
 - Yeni kampanya **daima duraklatılmış** oluşturulur, önizleme gösterilir,
