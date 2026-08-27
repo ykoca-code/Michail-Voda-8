@@ -152,6 +152,36 @@ Her iki kampanyada da yalnızca **Esik** kreatifi yayında. Bu mesajlar
 gerçekten test edilmek istenirse doğru yol, kendi bütçesiyle ayrı bir
 reklam setine alınmalarıdır — aynı sette bırakmak test değil, bütçe sızıntısı.
 
+## 27 Ağustos 2026 — bütçe düşürüldü, iki yeni kreatif kuruldu
+
+25 Ağustos 11:41'den sonra 48 saat boyunca hiç isimli kayıt gelmedi; bu
+sürede ~TL 2.013 harcandı. Teşhis: frekans düşük (1,13–1,26), yani doygunluk
+değil — ama TO her iki kampanyada da düşüyor (site %3,05 → %2,04, form
+%1,50 → %1,35) ve erişim büyürken dönüşüm düşüyor. Meta en yüksek niyetli
+kitleyi tüketti; tek kalan kreatifin çekim gücü daha soğuk kitlede yetmiyor.
+
+**Bütçe:** iki reklam seti de günlük TL 1.040 → **TL 700** (toplam TL 1.400).
+
+**İki yeni mesaj açısı** — ikisi de daha önce hiç denenmedi:
+
+| Reklam | Kreatif | Görsel | Hook |
+|---|---|---|---|
+| GV-Kira-v1 (site) | 1325935996034307 | `site/assets/ic-1.jpg` | Ayda 500 € kira garantili |
+| GV-Kitlik-v1 (site) | 1610017530715715 | `site/assets/cephe-1.jpg` | 30 dairenin 18'i satıldı |
+| GV-Kira-Form | 1022688140767742 | aynı 4:5 | aynı |
+| GV-Kitlik-Form | 1401079408635920 | aynı 4:5 | aynı |
+
+Reklam kimlikleri: 120253134335250721, 120253134336000721,
+120253134336430721, 120253134336850721. **Dördü de PAUSED**, önizlemeleri
+kontrol edildi.
+
+Vurgu satırı ("+ ailenizle oturum izni başvurusu") kasten sabit: hook değişse
+de reklamın ne olduğu her kreatifte aynı cümleyle anlaşılıyor. Kıtlık
+rakamları gerçek envanterden (18/30 satıldı); kira taahhüdü sözleşme maddesi
+olarak ifade ediliyor, getiri vaadi olarak değil.
+
+Kreatifler `marka/reklam/reklam-kare.py` ile üretildi.
+
 ## Çalışma kuralları
 
 - Yeni kampanya **daima duraklatılmış** oluşturulur, önizleme gösterilir,
