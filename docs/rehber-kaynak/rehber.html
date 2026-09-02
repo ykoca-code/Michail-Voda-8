@@ -75,6 +75,15 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
 .qa .a{font-size:9.5pt;line-height:1.55;color:var(--soft);margin:0}
 
 .pic{width:100%;height:62mm;object-fit:cover;margin:5mm 0}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
+.gal figure{margin:0}
+.gal img{width:100%;height:46mm;object-fit:cover;display:block}
+.gal figcaption{font-size:7.5pt;letter-spacing:.02em;color:var(--soft);margin-top:1.5mm}
+.gal .genis{grid-column:1 / -1}
+.gal .buyuk img{height:72mm}
+.gal .genis{grid-column:1 / -1}
+.gal .genis img{height:44mm}
+.gal + .fine{margin-top:4mm}
 .fine{font-size:8pt;color:var(--soft);line-height:1.5}
 
 /* son sayfa */
@@ -122,7 +131,7 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
   <h3>Michail Voda 8 bu istisna kapsamında</h3>
   <p>Atina merkezinde, Michail Voda ile Makedonias sokaklarının köşesindeki bir ofis binası, Gavalas·Ioannidou Architecture imzasıyla 30 daireli bir konut binasına dönüştürülüyor. Binanın konuta dönüşümü hukuken tamamlanmış durumda.</p>
 
-  <img class="pic" src="assets/sokak.jpg" alt="">
+  <img class="pic" src="assets/sokak.jpg" alt="" style="height:70mm;object-position:50% 34%">
   <p class="fine">Bilgiler Ağustos 2026 itibarıyla geçerlidir. Mevzuat değişebilir; güncel durum için hukuk büromuzdan teyit alınız.</p>
   <div class="pn">2</div>
 </div></section>
@@ -205,9 +214,42 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
   <div class="pn">5</div>
 </div></section>
 
+<!-- 6 GALERI -->
+<section class="page"><div class="pad">
+  <div class="hd"><span class="n">05 — Binadan Kareler</span><span class="b">Michail Voda 8</span></div>
+  <h2>Dönüşümden <em>sonrası</em></h2>
+  <p class="lead">Ofis katları daireye, iç avlu ortak yaşam alanına dönüşüyor. Daireler eşyalı teslim edilir; mutfak, beyaz eşya ve mobilyalar fiyata dahildir.</p>
+
+  <div class="gal">
+    <figure class="buyuk">
+      <img src="assets/cephe-2.jpg" alt="">
+      <figcaption>Cephe — balkon dizisi ve bitkilendirme dönüşümle eklendi</figcaption>
+    </figure>
+    <figure class="buyuk">
+      <img src="assets/avlu-1.jpg" alt="">
+      <figcaption>İç avlu — ortak kullanım alanı</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/ic-2.jpg" alt="">
+      <figcaption>Yaşam alanı · eşyalı teslim</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/yatak-odasi.jpg" alt="">
+      <figcaption>Uyku alanı</figcaption>
+    </figure>
+    <figure class="genis">
+      <img src="assets/banyo.jpg" alt="">
+      <figcaption>Banyo · tesisat yenilendi</figcaption>
+    </figure>
+  </div>
+
+  <p class="fine">Görseller mimari projeye ait tasarım görselleridir. Bina Aralık 2026'da teslim edilecektir; şantiyenin güncel durumunu gösteren tarihli fotoğrafları talep edebilirsiniz.</p>
+  <div class="pn">6</div>
+</div></section>
+
 <!-- 6 SÜREÇ -->
 <section class="page"><div class="pad">
-  <div class="hd"><span class="n">05 — Süreç</span><span class="b">Michail Voda 8</span></div>
+  <div class="hd"><span class="n">06 — Süreç</span><span class="b">Michail Voda 8</span></div>
   <h2>Türkiye'den ayrılmadan <em>dört adım</em></h2>
   <p class="lead">İşlemlerin tamamı vekâletname ile uzaktan yürütülür. Atina'ya yalnızca parmak izi randevusu için bir kez gelirsiniz.</p>
 
@@ -221,12 +263,12 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
   <div class="box dark">
     <p><strong>Tek muhatapla çalışırsınız.</strong> Satış sözleşmesi, avukat, vergi numarası, noter, tapu, parmak izi randevusu ve oturum kartı takibi — hepsini aynı ekip yürütür. Sürecin hangi aşamasında olduğunuzu her an sorabilirsiniz.</p>
   </div>
-  <div class="pn">6</div>
+  <div class="pn">7</div>
 </div></section>
 
-<!-- 7 GÜVENCE -->
+<!-- 8 GÜVENCE -->
 <section class="page"><div class="pad">
-  <div class="hd"><span class="n">06 — Güvence</span><span class="b">Michail Voda 8</span></div>
+  <div class="hd"><span class="n">07 — Güvence</span><span class="b">Michail Voda 8</span></div>
   <h2>Paranız <em>kime</em>, ne zaman geçiyor?</h2>
   <p class="lead">Yurt dışına altı haneli bir tutar göndermek sürecin en tedirgin edici adımı. Akışı olduğu gibi yazıyoruz.</p>
 
@@ -241,12 +283,12 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
   <p>Karar öncesinde Atina'ya gelip binayı, daireleri ve çevreyi kendi gözünüzle görmek isterseniz ziyaretinizi planlarız. Uzaktan karar vermek zorunda değilsiniz.</p>
 
   <img class="pic" src="assets/avlu-2.jpg" alt="">
-  <div class="pn">7</div>
+  <div class="pn">8</div>
 </div></section>
 
 <!-- 8 SSS -->
 <section class="page"><div class="pad">
-  <div class="hd"><span class="n">07 — Sık Sorulanlar</span><span class="b">Michail Voda 8</span></div>
+  <div class="hd"><span class="n">08 — Sık Sorulanlar</span><span class="b">Michail Voda 8</span></div>
   <h2>Aklınıza <em>takılanlar</em></h2>
 
   <div class="qa"><div class="q">29 m² küçük değil mi?</div><p class="a">Daire, oturmak için değil programa girmek ve kira geliri elde etmek için alınıyor. Atina merkezde stüdyo daireler öğrenci ve genç profesyonel kiracıların en çok aradığı tip; beş yıllık kira garantisi de bu talebe dayanıyor. 49 m²'ye kadar seçenek mevcut, fiyat değişmiyor. Belirtilen metrekareler net kullanım alanıdır; tapuda görünen alan ortak alan payıyla birlikte daha büyüktür.</p></div>
@@ -262,7 +304,7 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
   <div class="qa"><div class="q">Kira garantisini kim veriyor?</div><p class="a">Garanti, satış sözleşmesinin bir maddesidir; noter huzurunda imzalanan sözleşmeyle taahhüt edilir. Sözlü bir vaat değildir.</p></div>
 
   <div class="qa"><div class="q">Airbnb yapabilir miyim?</div><p class="a">Hayır. Golden Visa kapsamındaki mülkler kısa dönem kiralamaya kapalıdır. Beş yıllık uzun dönem kira garantisi bu kısıtı zaten karşılar.</p></div>
-  <div class="pn">8</div>
+  <div class="pn">9</div>
 </div></section>
 
 <!-- 9 İLETİŞİM -->
