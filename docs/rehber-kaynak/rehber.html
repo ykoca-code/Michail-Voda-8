@@ -61,6 +61,18 @@ td small{display:block;color:var(--soft);font-size:8pt;margin-top:.8mm}
 .card .t{font-size:7.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:1.5mm}
 .card b{font-family:Fr,serif;font-size:12pt;display:block;margin-bottom:1.5mm}
 .card p{font-size:9pt;line-height:1.5;margin:0;color:var(--soft)}
+.plogos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:4mm}
+.plogo{background:#fff;padding:5mm 4mm 4.5mm;text-align:center}
+.pl-mark{height:20mm;display:flex;align-items:center;justify-content:center;margin-bottom:3mm}
+.pl-mark img{width:auto;height:auto;object-fit:contain;display:block}
+.pl-mark img.l-team{max-height:9mm;max-width:34mm}
+.pl-mark img.l-gi{max-height:20mm;max-width:30mm}
+.pl-type{flex-direction:column;line-height:1.15}
+.pl-type b{font-family:Fr,serif;font-size:12pt;display:block}
+.pl-type em{font-style:normal;font-size:6.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);display:block;margin-top:1.5mm}
+.pl-role{font-size:7pt;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:1.5mm}
+.pl-note{font-size:8pt;line-height:1.45;color:var(--soft)}
+.plogos + .fine{margin-top:3mm}
 
 ol.steps{list-style:none;counter-reset:s}
 ol.steps li{counter-increment:s;position:relative;padding-left:12mm;margin-bottom:5mm}
@@ -203,7 +215,8 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
     <tr class="hi"><td>Müsait daire</td><td class="num">12 daire · 1., 2. ve 3. katlar</td></tr>
     <tr><td>Büyüklük</td><td class="num">29 – 49 m² net</td></tr>
     <tr><td>Teslim</td><td class="num">Aralık 2026 · eşyalı</td></tr>
-    <tr><td>Mimari</td><td class="num">Gavalas·Ioannidou Architecture</td></tr>
+    <tr><td>Mimari ve mühendislik</td><td class="num">Gavalas·Ioannidou</td></tr>
+    <tr><td>Ana yüklenici</td><td class="num">TEAM SA</td></tr>
     <tr><td>Hukuk</td><td class="num">Ramadanoglou Politis Legal Group</td></tr>
   </table>
 
@@ -276,13 +289,33 @@ ol.steps p{font-size:9.5pt;color:var(--soft);margin:0}
     <div class="card"><div class="t">Ödeme</div><b>Para elden geçmez</b><p>Ödeme banka kanalıyla yapılır. Satıcıya nakit ya da şahsi hesaba transfer söz konusu değildir; her adım kayıt altındadır.</p></div>
     <div class="card"><div class="t">Mülkiyet</div><b>Tapu sizin adınıza</b><p>Satış sözleşmesi noter huzurunda imzalanır, tescil doğrudan alıcı adına yapılır. Arada şirket ya da vekil mülkiyeti yoktur.</p></div>
     <div class="card"><div class="t">Denetim</div><b>Bağımsız avukat hakkı</b><p>Sözleşmeyi imzalamadan önce kendi seçtiğiniz bir avukata inceletebilirsiniz. Avukatlık masrafı zaten satıcıya aittir.</p></div>
-    <div class="card"><div class="t">Taraflar</div><b>Kayıtlı ve doğrulanabilir</b><p>Bina gerçek ve kayıtlı bir adreste. Hukuki süreci Kolonaki'deki Ramadanoglou Politis Legal Group yürütür.</p></div>
+    <div class="card"><div class="t">Taraflar</div><b>Kayıtlı ve doğrulanabilir</b><p>Bina gerçek ve kayıtlı bir adreste. İnşaatın ana yükleniciliği TEAM SA'da, mimari ve mühendislik projesi Gavalas·Ioannidou'da, hukuki süreç Ramadanoglou Politis Legal Group'ta.</p></div>
   </div>
+
+  <h3>Projeyi yürüten üç firma</h3>
+  <div class="plogos">
+    <div class="plogo">
+      <div class="pl-mark"><img class="l-team" src="assets/logo-team-sa.png" alt="TEAM SA"></div>
+      <div class="pl-role">Ana yüklenici</div>
+      <div class="pl-note">Atina merkezli. Würth, EYDAP ve Victoria's Secret dahil 40'ı aşkın kurumsal iş.</div>
+    </div>
+    <div class="plogo">
+      <div class="pl-mark"><img class="l-gi" src="assets/logo-gavalas-ioannidou.png" alt="Gavalas·Ioannidou"></div>
+      <div class="pl-role">Mimari ve mühendislik</div>
+      <div class="pl-note">Dönüşüm projesinin müellifi. 80'i aşkın proje; yeniden işlevlendirme ve restorasyon uzmanlığı.</div>
+    </div>
+    <div class="plogo">
+      <div class="pl-mark pl-type"><b>Ramadanoglou<br>Politis</b><em>Legal Group</em></div>
+      <div class="pl-role">Hukuk</div>
+      <div class="pl-note">Tsakalof 1, Atina. Satış sözleşmeleri, tapu işlemleri ve Golden Visa başvuruları.</div>
+    </div>
+  </div>
+  <p class="fine">Her firmanın geçmiş işlerini kendi web sitesinden inceleyebilirsiniz. Logolar ilgili firmalara aittir.</p>
 
   <h3>Binayı yerinde görün</h3>
   <p>Karar öncesinde Atina'ya gelip binayı, daireleri ve çevreyi kendi gözünüzle görmek isterseniz ziyaretinizi planlarız. Uzaktan karar vermek zorunda değilsiniz.</p>
 
-  <img class="pic" src="assets/avlu-2.jpg" alt="">
+  <img class="pic" src="assets/avlu-2.jpg" alt="" style="height:32mm">
   <div class="pn">8</div>
 </div></section>
 
