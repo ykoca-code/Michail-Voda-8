@@ -9,8 +9,8 @@
 ## 1. Durum özeti
 
 - Binada **30 daire** var (29–49 m², zemin+asma kat dubleksleri dahil). 29 Haziran 2026 satış tablosuna göre **18 daire satıldı, 12 daire boşta** (ağırlıklı 1. ve 2. kat, 3 adet de 3. katta). Zemin, 4. ve 5. katlar tamamen tükendi — bu, "tükeniyor" mesajını gerçeğe dayandırıyor.
-- Fiyat: **250.000 EUR** + **7.725 EUR satın alım vergisi** (alıcı öder) → alıcının ayıracağı toplam bütçe **257.725 EUR**.
-- Bizim karşıladığımız kapanış masrafları: **12.000–15.000 EUR** (yaklaşık 13.500 EUR) — avukatlık (satış sözleşmesi + Golden Visa başvurusu), sözleşme masrafları, kadastro, yatırımcı harcı ve hayat sigortası. Alıcı bu kalemler için ayrıca ödeme yapmaz.
+- Fiyat: **250.000 EUR** + **7.725 EUR satın alım vergisi** + **12.000–15.000 EUR kapanış masrafı** (hepsini alıcı öder) → alıcının ayıracağı toplam bütçe **269.725 EUR** (masrafların alt sınırı üzerinden; 15.000 EUR senaryosunda 272.725 EUR).
+- Kapanış masrafları: avukatlık (satış sözleşmesi + Golden Visa başvurusu), sözleşme masrafları, kadastro, yatırımcı harcı ve hayat sigortası. Dört kişilik bir aile için **12.000–15.000 EUR**. Tek rakamlı toplamı önden vermek bizim farkımız; kalemleri gizleyip sonradan fatura etmiyoruz.
 - Golden Visa başvuru sürecini Ramadanoglou Politis Legal Group ile uçtan uca biz yürütüyoruz; alıcıdan ayrı bir hizmet bedeli alınmıyor.
 - **Kira garantisi:** teslimden itibaren 5 yıl boyunca daireyi biz kiralıyoruz, ayda **500 EUR** (5 yılda 30.000 EUR geri dönüş, ~%2,4 brüt getiri).
 
@@ -37,7 +37,7 @@ Pazarlamanın tamamı şu mevzuat gerçeğinin üzerine kurulmalı:
 Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve sürecin yürütücüsüyüz**. Mesaj hiyerarşisi:
 
 1. **Eşik avantajı:** Atina'da normal eşik 800 bin €; MV8 dönüşüm projesi olduğu için 250 bin €.
-2. **Tek muhatap:** daire satışı + avukat + vergi numarası + biyometri randevusu + oturum kartı; hepsi bizde. 12.000–15.000 €'luk kapanış masraflarını biz karşılıyoruz; alıcı yalnızca 250.000 € + 7.725 € vergi öder.
+2. **Tek muhatap:** daire satışı + avukat + vergi numarası + biyometri randevusu + oturum kartı; hepsi bizde. Alıcı tek bir yerle muhatap olur, toplam bütçeyi (269.725 €) baştan bilir; kapanış masrafları sonradan sürpriz olarak çıkmaz.
 3. **Hız:** Golden Visa başvurusu için teslim beklenmez; satın alma sonrası başvuru başlar, oturum kartı daire teslim edilmeden alınabilir.
 4. **Öngörülebilir nakit akışı:** 5 yıl × 500 €/ay kira, banka hesabına.
 5. **Kıtlık:** 30 dairenin 18'i satıldı.
@@ -48,8 +48,8 @@ Rakip Golden Visa danışmanları "aracı"dır; biz **binanın sahibi ve süreci
 |---|---|
 | Daire satış bedeli | 250.000 € |
 | Satın alım vergisi (alıcı) | 7.725 € |
-| **Toplam yatırımcı bütçesi** | **257.725 €** |
-| Bizim karşıladığımız masraflar (avukatlık, noter, kadastro, sigorta) | +12.000–15.000 € (müşteri ödemez) |
+| Kapanış masrafları (avukatlık, noter, kadastro, sigorta) | 12.000–15.000 € |
+| **Toplam yatırımcı bütçesi** | **269.725 €** (masrafların alt sınırı üzerinden) |
 | 5 yıllık kira garantisi geri dönüşü | +30.000 € |
 
 **Hedef kitle (persona):**

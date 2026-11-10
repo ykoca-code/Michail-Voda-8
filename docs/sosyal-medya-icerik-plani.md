@@ -180,7 +180,7 @@ Michail Voda 8, Athens
 · Mimari: Gavalas·Ioannidou Architecture
 · Hukuk: Ramadanoglou Politis Legal Group, Kolonaki/Atina
 
-Avukatlık, noter, kadastro ve sigorta masraflarını (yaklaşık 13.500 €) biz karşılıyoruz.
+Avukatlık, noter, kadastro ve sigorta masrafları yaklaşık 12.000–15.000 € · ayırılması gereken toplam bütçe 269.725 €
 
 Fiyat listesi ve süreç dosyası için profildeki bağlantı → michailvoda8.com
 ```
