@@ -198,7 +198,7 @@ Türkiye pazarında bu anahtar kelimelerde gerçekçi aralık:
 - Tıklama başı maliyet: **0,60 – 1,40 €**
 - 930 € → yaklaşık **800–1.100 tıklama**
 - Site form dönüşüm oranı %2–4 → **16–40 ham lead**
-- Bunun %20–30'u gerçekten 250 k € bütçeye sahip → **4–10 nitelikli görüşme**
+- Bunun %20–30'u gerçekten 270 k € bütçeye sahip → **4–10 nitelikli görüşme**
 - Bu segmentte satışa dönüş %5–10 → **ayda 0,5–1 satış**
 
 12 dairelik stok için bu tempo yeterli: kampanya ~12 ayda stoğu tüketir, Meta
